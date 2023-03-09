@@ -1,5 +1,6 @@
-import { useRef, useState } from "react";
+import { useMemo, useRef, useState } from "react";
 import { Link } from "react-router-dom";
+import { useRecompenseContext } from "@/app/BcpApp/store/context";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
 import "animate.css";
@@ -9,11 +10,22 @@ interface IProps {
 }
 export const MailLayout: React.FC<IProps> = ({ children }) => {
   const [scrollTop, setScrollTop] = useState(0);
+  const { app } = useRecompenseContext();
 
   const listRef = useRef<HTMLAnchorElement>(null);
   const pdfRef = useRef<HTMLButtonElement>(null);
   const mailRef = useRef<HTMLDivElement>(null);
 
+  const { passwordPdf, namePdf } = useMemo(() => {
+    return {
+      passwordPdf: app.uid,
+      namePdf: app.name?.split(" ").join("-").toLowerCase().trim() + ".pdf",
+    };
+  }, [app]);
+
+  if (passwordPdf === "571113") {
+    console.log("Melisa?");
+  }
   const exportPdf = () => {
     const app = document.getElementById("app") as HTMLElement;
 
@@ -62,7 +74,7 @@ export const MailLayout: React.FC<IProps> = ({ children }) => {
           orientation: "p",
           unit: "mm",
           encryption: {
-            userPassword: "bcp-1",
+            userPassword: passwordPdf,
             ownerPassword: "797233232#2ewwe24",
             userPermissions: ["print", "copy"],
           },
@@ -92,7 +104,7 @@ export const MailLayout: React.FC<IProps> = ({ children }) => {
           );
           heightLeft -= pageHeight;
         }
-        doc.save("Downld.pdf");
+        doc.save(namePdf);
       } else if (formato === "one") {
         // let imgWidth: number = 270;
         let imgWidth: number = 446;
@@ -105,7 +117,7 @@ export const MailLayout: React.FC<IProps> = ({ children }) => {
           orientation: "p",
           unit: "px",
           encryption: {
-            userPassword: "bcp-2",
+            userPassword: passwordPdf,
             ownerPassword: "797233232#2ewwe24",
             userPermissions: ["print", "copy"],
           },
@@ -117,7 +129,7 @@ export const MailLayout: React.FC<IProps> = ({ children }) => {
         // pdf.addImage(imgData, "JPG", 0, 0, imgWidth, imgHeight);
         // console.log({ width, height });
         pdf.addImage(imgData, "JPG", 0, 0, width, imgHeight);
-        pdf.save("nuevo_pdf:v.pdf");
+        pdf.save(namePdf);
       }
 
       // Devolvemos las clases y los estilos seran los de un inicio
@@ -139,7 +151,7 @@ export const MailLayout: React.FC<IProps> = ({ children }) => {
     }
   };
   document.documentElement.style.setProperty("--h-img", -scrollTop - 26 + "px");
-  
+
   return (
     <>
       <div style={{ position: "fixed", left: "15px", top: "15px" }}>
