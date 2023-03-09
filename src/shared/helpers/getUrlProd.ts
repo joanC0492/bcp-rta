@@ -1,0 +1,1 @@
+export const getUrlProd: string = "./front-production";

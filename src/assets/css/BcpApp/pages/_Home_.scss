@@ -1,0 +1,259 @@
+.header p {
+  margin-bottom: 0px !important;
+}
+
+[class*="body-"] {
+  font-size: 20px;
+}
+
+.sueldo-table {
+  position: absolute;
+  top: 43px;
+  left: 76px;
+  background-color: white;
+  padding-top: 30px;
+  padding-bottom: 110px;
+}
+@media (min-width: 992px) {
+  .sueldo-table {
+    left: 174px;
+  }
+}
+@media (min-width: 1200px) {
+  .sueldo-table {
+    // left: 264px;
+    left: 284px;
+  }
+}
+@media (min-width: 1400px) {
+  .sueldo-table {
+    left: 353px;
+  }
+}
+
+#table {
+  width: 526px;
+}
+
+/* Titulos de las filas */
+#table .table-new-title p {
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  padding-block: 1px;
+}
+#table .table-new-title.first p {
+  background-color: #00b2ce;
+  color: #252363;
+}
+#table .table-new-title.secund p {
+  background-color: #75bf45;
+  color: #282360;
+}
+#table .table-new-title.third p {
+  background-color: #ef207d;
+  color: #fffeff;
+}
+
+#table .table-row-last td {
+  font-weight: bold;
+  font-size: 17px;
+}
+#table tr td {
+  font-style: italic;
+}
+#table tr .table-txt {
+  text-align: left;
+  padding-left: 32px;
+}
+#table tr .table-quantity {
+  text-align: left;
+}
+
+/* Filas de la data */
+#table tr:not(.table-new-title) {
+  line-height: 10px;
+}
+#table td {
+  color: #27225f;
+}
+
+.header-img {
+  width: 320px;
+}
+
+/**/
+.sueldos-total {
+  max-width: 280px;
+}
+
+/**/
+.footer {
+  font-size: 20px;
+}
+
+/*  */
+.thanks {
+  font-style: italic;
+}
+
+/* Cambiando la manera de mostrar el celular */
+/*
+.background-mobile {
+  $table: 400px;
+  // $bg-size: $table + 74px;
+  $bg-size: $table + 36px;
+  width: 100%;
+  max-width: $table;
+  height: 680px;
+  margin: 0 auto;
+  background-image: url("../images/_sueldo.png");
+  background-repeat: no-repeat;
+  background-size: $bg-size;
+  background-position: -18px 0px;
+  border-radius: 30px;
+  .table-parent {
+    padding: 26px 64px 26px 26px;
+  }
+  table {
+    background-color: #fff;
+  }
+}
+*/
+.background-mobile {
+  $height-img: 773px;
+  $table: 400px;
+  $bg-size: $table + 36px;
+  width: 100%;
+  max-width: $table;
+  height: calc($height-img - 42px);
+  margin: 0 auto;
+  border-radius: 30px;
+  .table-parent {
+    background: #fff;
+    height: 100%;
+    padding-top: 30px;
+  }
+  position: relative;
+  &::before {
+    content: "";
+    background-image: url(../images/_sueldo.png);
+    background-repeat: no-repeat;
+    background-size: 100% $height-img;
+    display: inline-block;
+    width: calc(100% + 160px);
+    height: $height-img;
+    position: absolute;
+    left: -55px;
+    top: -14px;
+  }
+}
+
+/*Mail*/
+.mail {
+  min-width: 750px;
+  min-height: 750px;
+  background-image: url("../images/mail/background-mail.jpg");
+  background-size: 100%;
+  background-position: left top;
+  padding: 54px 50px 45px 50px;
+  border-radius: 10px;
+  position: relative;
+  overflow-x: hidden;
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../images/mail/employed.png");
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: 9;
+    width: 438px;
+    height: 702px;
+    left: -90px;
+    bottom: 0;
+  }
+  &__header {
+  }
+  &__header-img {
+    max-width: 100%;
+  }
+  &__body {
+    padding-top: 35px;
+  }
+  &__title {
+    max-width: 535px;
+    color: #fff;
+    font-size: 60px;
+    line-height: 1.02;
+  }
+  &__description {
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.2;
+    max-width: 605px;
+  }
+  &__table-parent {
+    padding-top: 40px;
+  }
+  &__table-title {
+    color: #003382;
+    font-size: 30px;
+    line-height: 1.02;
+    max-width: 316px;
+  }
+  &__footer {
+    padding-top: 120px;
+  }
+}
+
+.table-bcp-parent {
+  // box-shadow: -10px 16px 44px -1px rgba(0, 0, 0, 0.59);
+  // -webkit-box-shadow: -10px 16px 44px -1px rgba(0, 0, 0, 0.59);
+  // -moz-box-shadow: -10px 16px 44px -1px rgba(0, 0, 0, 0.59);
+  .table-bcp:nth-of-type(1) {
+    background-color: #fff;
+    border-radius: 10px;
+    z-index: 30;
+  }
+  .table-bcp:nth-of-type(2) {
+    background-color: #dde4ed;
+    z-index: 20;
+    top: -18px;
+  }
+  .table-bcp:nth-of-type(3) {
+    background-color: #c6cfdc;
+    z-index: 10;
+    top: calc(-18px * 2);
+  }
+}
+.table-bcp {
+  $el: ".table-bcp";
+  width: 360px;
+  padding: 30px 18px 18px 18px;
+  position: relative;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  &__tbl {
+    margin-bottom: 0;
+  }
+  &__header {
+    line-height: 0.75;
+  }
+  &__title {
+    font-size: 20px;
+    color: #012d8a;
+  }
+  &__row {
+    line-height: 0.75;
+  }
+  &__col {
+    #{$el}__txt:nth-of-type(2) {
+      margin-left: 15px;
+    }
+  }
+  &__txt {
+    font-size: 20px;
+    display: inline-block;
+  }
+}

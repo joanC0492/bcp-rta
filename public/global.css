@@ -1,0 +1,64 @@
+:root {
+  --h-img: 0;
+}
+
+@font-face {
+  font-family: "Flexo";
+  src: url("/front-production/fonts/flexo-regular/Flexo-Regular.ttf")
+      format("truetype"),
+    url("/front-production/fonts/flexo-regular/Flexo-Regular.woff2")
+      format("woff2"),
+    url("/front-production/fonts/flexo-regular/Flexo-Regular.woff")
+      format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Flexo-bold";
+  src: url("/front-production/fonts/flexo-bold/Flexo-Bold.ttf")
+      format("truetype"),
+    url("/front-production/fonts/flexo-bold/Flexo-Bold.woff2") format("woff2"),
+    url("/front-production/fonts/flexo-bold/Flexo-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Flexo-demi";
+  src: url("/front-production/fonts/flexo-demi/Flexo-Demi.ttf")
+      format("truetype"),
+    url("/front-production/fonts/flexo-demi/Flexo-Demi.woff2") format("woff2"),
+    url("/front-production/fonts/flexo-demi/Flexo-Demi.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Flexo-boldit";
+  src: url("/front-production/fonts/flexo-boldIt/Flexo-BoldIt.ttf")
+      format("truetype"),
+    url("/front-production/fonts/flexo-boldIt/Flexo-BoldIt.woff2")
+      format("woff2"),
+    url("/front-production/fonts/flexo-boldIt/Flexo-BoldIt.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
+}
+
+body {
+  background: #00b0d0;
+  background: -moz-linear-gradient(top, #00b0d0 0%, #012e8a 100%);
+  background: -webkit-linear-gradient(top, #00b0d0 0%, #012e8a 100%);
+  background: linear-gradient(to bottom, #00b0d0 0%, #012e8a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b0d0', endColorstr='#012e8a',GradientType=0 );
+  background-repeat: no-repeat;
+}
+.flexo-regular {
+  font-family: "Flexo";
+}
+.flexo-bold {
+  font-family: "Flexo-bold";
+}
+.flexo-demi {
+  font-family: "Flexo-demi";
+}
+.flexo-boldit {
+  font-family: "Flexo-boldit";
+}
