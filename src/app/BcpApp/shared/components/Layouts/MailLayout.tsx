@@ -1,6 +1,7 @@
 import { useMemo, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { useRecompenseContext } from "@/app/BcpApp/store/context";
+import { Loader } from "@/shared/components";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
 import "animate.css";
@@ -9,6 +10,7 @@ interface IProps {
   children: React.ReactNode;
 }
 export const MailLayout: React.FC<IProps> = ({ children }) => {
+  const [loaderPdf, setLoaderPdf] = useState<boolean>(false);
   const [scrollTop, setScrollTop] = useState(0);
   const { app } = useRecompenseContext();
 
@@ -23,11 +25,10 @@ export const MailLayout: React.FC<IProps> = ({ children }) => {
     };
   }, [app]);
 
-  if (passwordPdf === "571113") {
-    console.log("Melisa?");
-  }
   const exportPdf = () => {
     const app = document.getElementById("app") as HTMLElement;
+    const $html = document.querySelector("html") as HTMLHtmlElement;
+    const $body = document.querySelector("body") as HTMLBodyElement;
 
     const $mail = mailRef.current as HTMLDivElement;
     const $list = listRef.current as HTMLAnchorElement;
@@ -40,8 +41,13 @@ export const MailLayout: React.FC<IProps> = ({ children }) => {
       "animate__fadeIn",
       "animate__fast"
     );
+    $html.classList.add("overflow-hidden");
+    $body.classList.add("overflow-hidden");
     $list.classList.add("invisible");
     $pdf.classList.add("invisible");
+
+    // Emepzamos cargando el pdf
+    setLoaderPdf(true);
 
     html2canvas(app, {
       logging: true,
@@ -139,8 +145,13 @@ export const MailLayout: React.FC<IProps> = ({ children }) => {
         "animate__fadeIn",
         "animate__fast"
       );
+      $html.classList.remove("overflow-hidden");
+      $body.classList.remove("overflow-hidden");
       $list.classList.remove("invisible");
       $pdf.classList.remove("invisible");
+
+      // Quitamos el Loader, ya se genero el PDF
+      setLoaderPdf(false);
     });
   };
 
@@ -154,7 +165,7 @@ export const MailLayout: React.FC<IProps> = ({ children }) => {
 
   return (
     <>
-      <div style={{ position: "fixed", left: "15px", top: "15px" }}>
+      <div style={{ position: "fixed", left: "15px", top: "15px", zIndex: 9 }}>
         <Link
           ref={listRef}
           to={"lista-de-usuarios"}
@@ -184,6 +195,8 @@ export const MailLayout: React.FC<IProps> = ({ children }) => {
           </div>
         </div>
       </div>
+
+      {loaderPdf && <Loader />}
     </>
   );
 };

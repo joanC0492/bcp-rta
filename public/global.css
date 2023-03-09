@@ -42,7 +42,7 @@
   font-style: italic;
 }
 
-body {
+#app {
   background: #00b0d0;
   background: -moz-linear-gradient(top, #00b0d0 0%, #012e8a 100%);
   background: -webkit-linear-gradient(top, #00b0d0 0%, #012e8a 100%);
