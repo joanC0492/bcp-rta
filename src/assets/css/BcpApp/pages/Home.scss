@@ -31,6 +31,7 @@
   }
   &--image {
     min-height: 881px;
+    max-width: 750px;
     &::before {
       display: none;
     }
@@ -131,7 +132,7 @@
     max-width: 100%;
     min-width: auto;
     padding: 34px 30px 30px;
-    margin-top: 40px;
+    margin-top: 0;
     max-height: none !important;
     overflow-y: clip !important;
     &::before {

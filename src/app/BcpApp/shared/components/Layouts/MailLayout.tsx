@@ -1,9 +1,9 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Loader } from "@/shared/components";
-import { ViewImage, Navigate } from "@/app/BcpApp/shared/components";
-import "animate.css";
 import { useExportMultimedia } from "@/app/BcpApp/shared/hooks";
+import { ViewImage, Navigate } from "@/app/BcpApp/shared/components";
+import cssNav from "@/assets/css/BcpApp/components/Navigate.module.scss";
+import "animate.css";
 
 interface IProps {
   children: React.ReactNode;
@@ -12,12 +12,9 @@ export const MailLayout: React.FC<IProps> = ({ children }) => {
   const { exportPdf, exportImg, elementsRef, loading, showViewImage } =
     useExportMultimedia();
   // const [showViewImage, setShowViewImage] = useState<boolean>(false);
-
   return (
     <>
-      <div
-        style={{ position: "fixed", left: "15px", top: "15px", zIndex: 9 }}
-        ref={elementsRef.refNavigate}>
+      <div ref={elementsRef.refNavigate} className={cssNav["Navigate"]}>
         <Link to={"lista-de-usuarios"} className="btn btn-outline-primary">
           Lista de usuarios
         </Link>

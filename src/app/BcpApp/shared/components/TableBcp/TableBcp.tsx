@@ -12,7 +12,6 @@ export const TableBcp: React.FC<IProps> = ({
   zindex,
 }) => {
   const isTotal: boolean = macrocategoria.trim() !== "TOTAL";
-  // const isSubtotal: boolean = data.
 
   return (
     <div
@@ -43,7 +42,15 @@ export const TableBcp: React.FC<IProps> = ({
                         `}>
                     {item.categoria}:
                   </span>
-                  <span className="table-bcp__txt flexo-regular">
+                  <span
+                    className={`table-bcp__txt 
+                    ${
+                      item.categoria === "Sub Total"
+                        ? "flexo-bold"
+                        : "flexo-regular"
+                    }
+                    ${isTotal ? "" : "flexo-bold"}
+                    `}>
                     S/{item.monto.toLocaleString("en-US")}
                   </span>
                 </div>

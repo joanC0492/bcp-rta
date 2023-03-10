@@ -1,28 +1,12 @@
-import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { IUser } from "@/app/BcpApp/domain";
-import { UserService } from "@/app/BcpApp/services";
+import { useUsers } from "@/app/BcpApp/shared/hooks";
+import { useUserContext } from "../../store/UserContext";
 
 export const List = () => {
-  const [users, setUsers] = useState([] as IUser[]);
+  const { users } = useUserContext();
+  useUsers();
 
-  useEffect(() => {
-    let isCancelled = false;
-    const getUser = async () => {
-      try {
-        const data = (await UserService.getUser()) || ([] as IUser[]);
-        if (!isCancelled) setUsers(data);
-      } catch (error) {
-        console.log(error);
-      }
-    };
-    getUser();
-
-    return () => {
-      isCancelled = true;
-    };
-  }, []);
-
+  console.log({ users });
   return (
     <div className="container-fluid py-5" style={{ backgroundColor: "white" }}>
       <div className="container">
@@ -36,9 +20,6 @@ export const List = () => {
                   <th scope="col">#</th>
                   <th scope="col">Código</th>
                   <th scope="col">Nombre</th>
-                  <th className="text-start" scope="col">
-                    DNI
-                  </th>
                   <th scope="col">Enlace</th>
                 </tr>
               </thead>
@@ -48,11 +29,8 @@ export const List = () => {
                     <th scope="row">{i}</th>
                     <td>{user.uid}</td>
                     <td>{user.name}</td>
-                    <td className="text-start">{user.dni}</td>
                     <td>
-                      <Link to={"/?code=" + user.uid + "&dni=" + user.dni}>
-                        Link
-                      </Link>
+                      <Link to={"/?code=" + user.uid}>Link</Link>
                     </td>
                   </tr>
                 ))}
