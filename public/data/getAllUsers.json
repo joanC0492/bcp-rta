@@ -1,6 +1,58 @@
 {
   "d": [
-    { "__type": "User", "UID": "571112", "NAME": "MICHAEL BORJAS BELTRAN" },
-    { "__type": "User", "UID": "571113", "NAME": "MELISA BRAVO" }
+    {
+      "__type": "User",
+      "UID": "571112",
+      "NAME": "MICHAEL BORJAS BELTRAN",
+      "DNI": "46515992"
+    },
+    {
+      "__type": "User",
+      "UID": "217731",
+      "NAME": "GAMARRA SAMANIEGO GUSTAVO ADOLFO",
+      "DNI": "09542946"
+    },
+    {
+      "__type": "User",
+      "UID": "577275",
+      "NAME": "TRUJILLO FLORES MELISSA ANDREA",
+      "DNI": "75610466"
+    },
+    {
+      "__type": "User",
+      "UID": "513464",
+      "NAME": "AREVALO HUERTA ELIZABETH",
+      "DNI": "09277797"
+    },
+    {
+      "__type": "User",
+      "UID": "546751",
+      "NAME": "TEMOCHE MENDIGUREN RICARDO EDUARDO",
+      "DNI": "41893433"
+    },
+    {
+      "__type": "User",
+      "UID": "593738",
+      "NAME": "DEL CASTILLO GUTIERREZ LYA CIBELE",
+      "DNI": "71014084"
+    },
+    {
+      "__type": "User",
+      "UID": "620338",
+      "NAME": "CHANG REYES LEYLA ROSA",
+      "DNI": "72621449"
+    },
+    {
+      "__type": "User",
+      "UID": "620819",
+      "NAME": "VARGAS VIDAL HERBERT CHARLIE",
+      "DNI": "44894675"
+    },
+    {
+      "__type": "User",
+      "UID": "630620",
+      "NAME": "PRADO VIGIL ANA ISABEL",
+      "DNI": "46838673"
+    }
   ]
 }

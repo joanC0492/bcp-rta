@@ -18,13 +18,16 @@ export const Home = () => {
   const { setApp } = useRecompenseContext();
   const [searchParams] = useSearchParams();
   const codeParam = searchParams.get("code") || "";
+  const dniParam = searchParams.get("dni") || "";
+  console.log(codeParam, dniParam);
 
   useEffect(() => {
     let isCancelled = false;
     const setRecompense = async () => {
       try {
         const data =
-          (await Recompense.postRecompense(codeParam)) || ({} as IApp);
+          (await Recompense.postRecompense(codeParam, dniParam)) ||
+          ({} as IApp);
         if (!isCancelled) setApp(data);
       } catch (error) {
         console.log(error);

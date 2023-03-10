@@ -3,10 +3,11 @@ import { IApp, IRecompense_, Irta } from "@/app/BcpApp/domain";
 const bcpAppEmpty: IApp = {
   uid: "",
   name: "",
+  dni: "",
   recompense: [],
 };
 
-export const getBcpAppAdapter = (dataResponse: Irta[]): IApp => {
+export const getBcpAppAdapter = (dataResponse: Irta[], dni: string): IApp => {
   if (dataResponse.length === 0) return bcpAppEmpty;
 
   // Obtenemos el id y nombre que se esta repitiendo
@@ -45,6 +46,7 @@ export const getBcpAppAdapter = (dataResponse: Irta[]): IApp => {
   const bcpApp: IApp = {
     uid,
     name,
+    dni,
     recompense,
   };
 

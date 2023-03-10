@@ -30,12 +30,15 @@ export const List = () => {
           <div className="col-12 col-lg-11 col-xl-10 mx-auto">
             <h1>Lista de Usuarios</h1>
             <hr />
-            <table className="table">
+            <table className="table table-hover">
               <thead>
                 <tr>
                   <th scope="col">#</th>
                   <th scope="col">Código</th>
                   <th scope="col">Nombre</th>
+                  <th className="text-start" scope="col">
+                    DNI
+                  </th>
                   <th scope="col">Enlace</th>
                 </tr>
               </thead>
@@ -45,8 +48,11 @@ export const List = () => {
                     <th scope="row">{i}</th>
                     <td>{user.uid}</td>
                     <td>{user.name}</td>
+                    <td className="text-start">{user.dni}</td>
                     <td>
-                      <Link to={"/?code=" + user.uid}>Link</Link>
+                      <Link to={"/?code=" + user.uid + "&dni=" + user.dni}>
+                        Link
+                      </Link>
                     </td>
                   </tr>
                 ))}

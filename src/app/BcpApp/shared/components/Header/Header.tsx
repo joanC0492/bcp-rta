@@ -1,9 +1,10 @@
 interface IProps {
   src: string;
+  classes?: string;
 }
-export const Header: React.FC<IProps> = ({ src }) => {
+export const Header: React.FC<IProps> = ({ src, classes = "" }) => {
   return (
-    <header className="mail__header">
+    <header className={`mail__header ${classes}`}>
       <img
         src={src + "/logo-header.png"}
         alt="Logo Header"

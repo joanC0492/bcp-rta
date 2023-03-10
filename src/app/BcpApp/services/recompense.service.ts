@@ -7,9 +7,13 @@ const TYPE: string = import.meta.env.VITE_TYPE;
 interface IQuerySql {
   d: Irta[];
 }
-const postRecompense = async (uid: string): Promise<IApp | undefined> => {
+const postRecompense = async (
+  uid: string,
+  dni: string
+): Promise<IApp | undefined> => {
   try {
     let res: Response;
+    let data: Irta[];
     if (TYPE === "dev") {
       res = await fetch(URL, {
         method: "POST",
@@ -19,16 +23,14 @@ const postRecompense = async (uid: string): Promise<IApp | undefined> => {
         body: JSON.stringify({ obj: { UID: uid, NAME: "" } }),
       });
       const dataJson = await res.json();
-      const data: Irta[] = dataJson.d;
-      return getBcpAppAdapter(data);
+      data = dataJson.d;
     } else {
       res = await fetch(URL);
       const dataJson: IQuerySql[] = await res.json();
-      const data: Irta[] = dataJson.find(
-        (item) => item.d[0].ID_MATRICULA === uid
-      )!.d;
-      return getBcpAppAdapter(data);
+      data = dataJson.find((item) => item.d[0].ID_MATRICULA === uid)!.d;
     }
+
+    return getBcpAppAdapter(data, dni);
   } catch (error) {
     console.log(error);
   }
