@@ -4,6 +4,10 @@
 ```sh
 npm install
 ```
+## Dependencias
+- [react](https://github.com/facebook/react/)
+- [react-router-dom](https://github.com/remix-run/react-router)
+- [animate.css](https://github.com/animate-css/animate.css)
 
 ## Dependencias de desarrollo
 - [jspdf](https://github.com/parallax/jsPDF)
