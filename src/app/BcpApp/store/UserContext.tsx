@@ -1,5 +1,6 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useState, useEffect } from "react";
 import { IUser } from "@/app/BcpApp/domain";
+import { useUsers } from "../shared/hooks";
 
 interface IUserContext {
   users: IUser[];
@@ -12,20 +13,26 @@ interface IProps {
   children: React.ReactNode;
 }
 const UserProvider: React.FC<IProps> = ({ children }) => {
-  const [users, setUsers] = useState([] as IUser[]);
+  const { users } = useUsers();
+  const [tmpUsers, tmpSetUsers] = useState(users);
 
   const handleUsers = (users: IUser[]) => {
-    setUsers([...users]);
+    tmpSetUsers([...users]);
   };
 
+  useEffect(() => {
+    tmpSetUsers(users);
+  }, [users]);  
+  
   return (
-    <UserContext.Provider value={{ users, handleUsers }}>
+    <UserContext.Provider value={{ users: tmpUsers, handleUsers }}>
       {children}
     </UserContext.Provider>
   );
 };
 
 const useUserContext = () => {
+  // useUsers();
   return useContext(UserContext);
 };
 

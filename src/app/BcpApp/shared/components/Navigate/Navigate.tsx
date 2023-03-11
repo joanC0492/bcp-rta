@@ -1,20 +1,27 @@
 import { Link } from "react-router-dom";
-import { useExportMultimedia } from "@/app/BcpApp/shared/hooks";
+import cssNav from "@/assets/css/BcpApp/components/Navigate.module.scss";
 
-export const Navigate = () => {
-  const { exportPdf, exportImg, elementsRef } = useExportMultimedia();
-
+interface IProps {
+  exportPdf: () => void;
+  exportImg: () => void;
+  elementsRef: {
+    mailRef: React.RefObject<HTMLDivElement>;
+    imageRef: React.RefObject<HTMLDivElement>;
+    refNavigate: React.RefObject<HTMLDivElement>;
+  };
+}
+export const Navigate: React.FC<IProps> = ({
+  exportPdf,
+  exportImg,
+  elementsRef,
+}) => {
   return (
     <>
-      <div style={{ position: "fixed", left: "15px", top: "15px", zIndex: 9 }}>
-        <Link
-          // ref={elementsRef.listRef}
-          to={"lista-de-usuarios"}
-          className="btn btn-outline-primary">
+      <div ref={elementsRef.refNavigate} className={cssNav["Navigate"]}>
+        <Link to={"lista-de-usuarios"} className="btn btn-outline-primary">
           Lista de usuarios
         </Link>
         <button
-          // ref={elementsRef.pdfRef}
           type="button"
           className="btn btn-outline-primary mx-3"
           onClick={exportPdf}>

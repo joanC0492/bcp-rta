@@ -1,12 +1,8 @@
 import { Link } from "react-router-dom";
-import { useUsers } from "@/app/BcpApp/shared/hooks";
 import { useUserContext } from "../../store/UserContext";
 
 export const List = () => {
   const { users } = useUserContext();
-  useUsers();
-
-  console.log({ users });
   return (
     <div className="container-fluid py-5" style={{ backgroundColor: "white" }}>
       <div className="container">

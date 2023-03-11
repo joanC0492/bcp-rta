@@ -3,6 +3,8 @@ import { IApp } from "./";
 export interface IRecompenseContext {
   app: IApp;
   setApp: (recompense: IApp) => void;
+  loading: boolean;
+  handleLoading: (loading: boolean) => void;
 }
 export interface Irta {
   CATEGORIA: string;

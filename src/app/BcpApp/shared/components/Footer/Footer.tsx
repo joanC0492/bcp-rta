@@ -1,11 +1,10 @@
-interface IProps {
-  src: string;
-}
-export const Footer: React.FC<IProps> = ({ src }) => {
+import { srcImages } from "@/shared/helpers";
+
+export const Footer = () => {
   return (
     <footer className="mail__footer text-end">
       <img
-        src={src + "/logo-footer.png"}
+        src={srcImages + "/logo-footer.png"}
         alt="Logo Footer"
         className="mail__footer-img"
       />

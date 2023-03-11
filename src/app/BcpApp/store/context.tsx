@@ -1,4 +1,4 @@
-import { createContext, useContext, useReducer } from "react";
+import { createContext, useContext, useReducer, useState } from "react";
 import { IAction, IApp, IRecompenseContext } from "@/app/BcpApp/domain";
 import { reducer } from "./reducer";
 
@@ -6,6 +6,8 @@ import { reducer } from "./reducer";
 const initialState: IRecompenseContext = {
   app: {} as IApp,
   setApp: (recompense: IApp) => {},
+  loading: false,
+  handleLoading: () => {},
 };
 
 // Lo que necesitar el reducer
@@ -20,6 +22,11 @@ interface IProps {
 }
 const RecompenseProvider: React.FC<IProps> = ({ children }) => {
   const [app, dispatch] = useReducer(reducer, initialState, init);
+  const [loading, setLoading] = useState<boolean>(false);
+
+  const handleLoading = (state: boolean) => {
+    setLoading(state);
+  };
 
   const setApp = (app: IApp) => {
     const action: IAction = {
@@ -34,6 +41,8 @@ const RecompenseProvider: React.FC<IProps> = ({ children }) => {
       value={{
         app,
         setApp,
+        loading,
+        handleLoading,
       }}>
       {children}
     </RecompenseContext.Provider>

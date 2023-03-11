@@ -4,6 +4,7 @@ import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
 
 const NAME_PDF_IMG: string = "RecompensaTotal_";
+
 export const useExportMultimedia = () => {
   const { app } = useRecompenseContext();
   const [loading, setLoading] = useState<boolean>(false);
@@ -39,7 +40,6 @@ export const useExportMultimedia = () => {
   };
 
   const exportPdf = () => {
-    console.log("app.uid", app.uid);
     const $app = document.getElementById("app") as HTMLElement;
 
     // Modificamos estilos al hacer la captura
@@ -101,8 +101,6 @@ export const useExportMultimedia = () => {
 
     setTimeout(() => {
       const $image = imageRef.current as HTMLDivElement;
-      console.log($image);
-      console.log($image.getBoundingClientRect());
 
       // Modificamos estilos al hacer la captura
       changeClasses("remove");
@@ -121,7 +119,6 @@ export const useExportMultimedia = () => {
 
           // Devolvemos las clases y los estilos seran los de un inicio
           changeClasses("add");
-
           setShowViewImage(false);
           setLoading(false);
         })

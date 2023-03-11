@@ -2,23 +2,18 @@ import { Header } from "@/app/BcpApp/shared/components";
 import { useRecompenseContext } from "@/app/BcpApp/store/context";
 import { getUrlProd } from "@/shared/helpers";
 
-const srcImages: string = getUrlProd + "/images/mail";
-
 export const ViewImage = () => {
   const { app } = useRecompenseContext();
 
   return (
     <>
-      <Header src={srcImages} classes="text-center mt-5" />
+      <Header classes="text-center mt-5" />
       <div className="mail__body text-center">
         <div>
           <p className="mail__description flexo-demi mail__description--image">
             Hola
           </p>
-          <p className="mail__title flexo-bold mx-auto">
-            {/* {app.name?.split(" ")[0]}, */}
-            {app.name},
-          </p>
+          <p className="mail__title flexo-bold mx-auto">{app.name},</p>
         </div>
 
         <div className="mt-4">

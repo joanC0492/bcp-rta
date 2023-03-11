@@ -1,18 +1,19 @@
+import { srcImages } from "@/shared/helpers";
+
 interface IProps {
-  src: string;
   classes?: string;
 }
-export const Header: React.FC<IProps> = ({ src, classes = "" }) => {
+export const Header: React.FC<IProps> = ({ classes = "" }) => {
   return (
     <header className={`mail__header ${classes}`}>
       <img
-        src={src + "/logo-header.png"}
+        src={srcImages + "/logo-header.png"}
         alt="Logo Header"
         className="mail__header-img"
       />
       <div className="mail__cloud-whithe">
         <img
-          src={src + "/bg-white.png"}
+          src={srcImages + "/bg-white.png"}
           alt="Cloud White"
           className="mail__cloud-img"
         />
