@@ -40,8 +40,12 @@ export const useExportMultimedia = () => {
   };
 
   const exportPdf = () => {
-    const $app = document.getElementById("app") as HTMLElement;
-
+    // const $image = imageRef.current as HTMLDivElement;
+    // const $app = document.getElementById("app") as HTMLElement;
+    // console.log("imageRef", imageRef);
+    const $app = mailRef.current as HTMLDivElement;
+    
+    console.log($app);
     // Modificamos estilos al hacer la captura
     changeClasses("remove");
 

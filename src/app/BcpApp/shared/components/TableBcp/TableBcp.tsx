@@ -11,7 +11,9 @@ export const TableBcp: React.FC<IProps> = ({
   data,
   zindex,
 }) => {
-  const isTotal: boolean = macrocategoria.trim() !== "TOTAL";
+  const isNotTotal: boolean = macrocategoria.trim() !== "TOTAL";
+
+  if (!isNotTotal) return <></>;
 
   return (
     <div
@@ -22,7 +24,7 @@ export const TableBcp: React.FC<IProps> = ({
       }}>
       <table className="table table-borderless table-bcp__tbl">
         <tbody className="table-bcp__body">
-          {isTotal && (
+          {isNotTotal && (
             <tr className="table-bcp__header">
               <td className="table-bcp__title flexo-bold">{macrocategoria}</td>
             </tr>
@@ -34,7 +36,7 @@ export const TableBcp: React.FC<IProps> = ({
                   <span
                     className={`
                       ${
-                        isTotal
+                        isNotTotal
                           ? "table-bcp__txt flexo-regular"
                           : "table-bcp__title flexo-bold"
                       }
@@ -49,7 +51,7 @@ export const TableBcp: React.FC<IProps> = ({
                         ? "flexo-bold"
                         : "flexo-regular"
                     }
-                    ${isTotal ? "" : "flexo-bold"}
+                    ${isNotTotal ? "" : "flexo-bold"}
                     `}>
                     S/{item.monto.toLocaleString("en-US")}
                   </span>

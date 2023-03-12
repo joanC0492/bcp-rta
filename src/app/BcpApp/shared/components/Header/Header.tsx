@@ -5,7 +5,7 @@ interface IProps {
 }
 export const Header: React.FC<IProps> = ({ classes = "" }) => {
   return (
-    <header className={`mail__header ${classes}`}>
+    <header className={`mail__header text-center ${classes}`}>
       <img
         src={srcImages + "/logo-header.png"}
         alt="Logo Header"

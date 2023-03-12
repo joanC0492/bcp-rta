@@ -5,17 +5,19 @@
   background-image: url("../images/mail/background-mail.jpg");
   background-size: cover;
   background-position: left top;
-  padding: 54px 50px 45px 50px;
+  padding: 15px 50px 15px 50px;
   border-radius: 10px;
   position: relative;
   overflow-x: hidden;
   overflow-y: clip;
   max-width: 829px;
+  // max-height: 1163.78px;
   &.scroll {
     max-height: 1500px;
     overflow-y: auto;
   }
   &::before {
+    display: none;
     content: "";
     position: absolute;
     background-image: url("../images/mail/employed.png");
@@ -27,6 +29,20 @@
     height: 702px;
     left: -90px;
     bottom: 0;
+  }
+  &::after {
+    display: none;
+    content: "";
+    position: absolute;
+    background-image: url("../images/experiencia-woow.png");
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: 9;
+    width: 90px;
+    height: 89px;
+    left: 35px;
+    bottom: 630px;
   }
   &--image {
     min-height: 881px;
@@ -51,6 +67,7 @@
   }
   &__header-img {
     max-width: 100%;
+    max-width: 250px;
     @media (max-width: 767px) {
       width: 160px;
     }
@@ -61,6 +78,7 @@
     right: 0;
   }
   &__cloud-img {
+    width: 209px;
     @media (max-width: 767px) {
       width: 130px;
     }
@@ -68,21 +86,20 @@
   &__cloud-txt {
     color: #00bfe2;
     margin-bottom: 0;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 1.2;
-    padding: 25px 10px 10px 55px;
+    padding: 25px 10px 10px 40px;
     @media (max-width: 767px) {
       font-size: 16px;
       padding: 13.5px 10px 10px 30px;
     }
   }
   &__body {
-    padding-top: 35px;
+    padding-top: 25px;
   }
   &__title {
     max-width: 535px;
     color: #fff;
-    // font-size: 60px;
     font-size: 36px;
     line-height: 1.02;
     @media (max-width: 767px) {
@@ -91,7 +108,7 @@
   }
   &__description {
     color: #fff;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.2;
     max-width: 605px;
     @media (max-width: 767px) {
@@ -104,19 +121,29 @@
     }
   }
   &__table-parent {
-    // padding-top: 40px;
-    padding-top: 15px;
+    padding-top: 7.5px;
   }
+  &__table-parent-employed {
+    position: relative;
+    top: 0;
+    left: -95px;
+    width: 370px;
+  }
+  &__table-parent-woow {
+    position: absolute;
+    left: 0;
+    bottom: 770px;
+    z-index: 9;
+  }
+
   &__table-title {
-    // font-size: 30px;
-    // max-width: 316px;
     color: #003382;
     font-size: 26px;
     line-height: 1.02;
     max-width: 100%;
   }
   &__footer {
-    padding-top: 120px;
+    padding-top: 25px;
   }
 
   &__line {
@@ -125,6 +152,12 @@
       height: 5px;
       background-color: #fff;
     }
+  }
+
+  &__footer {
+  }
+  &__footer-img {
+    max-width: 96px;
   }
 
   @media (max-width: 767px) {
@@ -143,6 +176,25 @@
 }
 
 .table-bcp-parent {
+  position: relative;
+  min-height: 628px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../images/chanchito.png");
+    // background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: 200;
+    width: 188px;
+    height: 152px;
+    // right: 0;
+    // bottom: -120px;
+    right: -43px;
+    bottom: -66px;
+  }
+
   .table-bcp:nth-of-type(1) {
     border-radius: 10px;
   }
@@ -155,12 +207,35 @@
   .table-bcp:nth-of-type(3n + 3) {
     background-color: #c6cfdc;
   }
-  min-height: 420px;
   @media (max-width: 767px) {
     min-height: auto;
     $width: -18px;
     margin-left: $width;
     width: calc(100% + ($width * -2));
+  }
+
+  &__total {
+    background-color: #e36825;
+    border-radius: 14px;
+    // max-width: 200px;
+    // max-width: 235px;
+    min-width: 235px;
+    max-width: 235px;
+    padding: 10px 15px;
+    text-align: center;
+    position: relative;
+    top: -7.5px;
+  }
+  &__total-txt {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 0;
+    line-height: 1.1;
+  }
+  &__total-price {
+    color: white;
+    font-size: 28px;
+    margin-bottom: 0;
   }
 }
 
@@ -185,13 +260,15 @@
   &__title {
     font-size: 20px;
     color: #012d8a;
+    font-style: italic;
   }
   &__row {
-    line-height: 0.65;
+    line-height: 0.4;
   }
   &__txt {
-    font-size: 18px;
+    font-size: 16px;
     display: inline-block;
+    font-style: italic;
     @media (max-width: 767px) {
       font-size: 15px;
     }
