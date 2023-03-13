@@ -23,17 +23,16 @@ export const ViewImage = () => {
 
         <div className="mt-4">
           <p className="flexo-regular h4 text-white">
-            Este 2022 hemos superado muchos retos juntos y logrado cumplir
-            nuestros objetivos propuestos.
+            Este 2022 hemos superado muchos retos juntos logrando cumplir
+            nuestros objetivos.
           </p>
           <p className="flexo-regular h4 text-white">
-            ¡Gracias a tu compromiso con el Banco, logramos transformar planes
-            en realidad nuestros y de nuestros clientes!
+            ¡Gracias a tu compromiso con el Banco, logramos transformar tus
+            planes en realidad y los de nuestros clientes!
           </p>
           <p className="flexo-regular h4 text-white">
-            Hoy queremos celebrar y compartir contigo los beneficios que forman
-            parte de tu Recompensa Total que disfrutaste por ser colaborador
-            BCP.
+            Hoy queremos celebrar y compartir contigo el detalle de tu
+            Recompensa Total que disfrutaste en el 2022 por ser colaborador BCP.
           </p>
           {/* <p className="mail__title flexo-demi mx-auto mt-4">
             ¡Gracias a tu compromiso con el Banco, logramos transformar planes
@@ -55,12 +54,13 @@ export const ViewImage = () => {
 
         <div className="mt-5">
           <div>
-            <p className="flexo-demi h5 text-white mb-0">
+            <p className="flexo-regular h5 text-white mb-0">
               Para más información,
             </p>
-            <p className="flexo-demi h5 text-white">
-              descarga el adjunto del correo.
+            <p className="flexo-regular h5 text-white">
+              descarga el adjunto del correo e
             </p>
+            <p className="flexo-regular h5 text-white">ingresa tu DNI</p>
           </div>
           <div className="mt-2">
             <img
@@ -75,7 +75,8 @@ export const ViewImage = () => {
           <p
             className="flexo-demi h4 text-white mb-0"
             style={{ fontSize: "22px" }}>
-            Recuerda que haz podido disfrutar de más beneficios como:
+            Recuerda que en el BCP contamos con más beneficios que puedes
+            disfrutar
           </p>
         </div>
 

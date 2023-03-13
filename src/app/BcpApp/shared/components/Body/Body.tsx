@@ -26,10 +26,11 @@ export const Body = () => {
           el alto desempeño.
         </p>
         <p className="mail__description flexo-regular mx-auto">
-          Te compartimos el detalle de la Recompensa Total Anual que recibiste
+          Te compartimos el detalle de la Recompensa Total Anual que disfrutaste
           en el 2022 gracias a tu contribución a los excelentes resultados de la
-          organización. Este detalle está compuesto por tus compensaciones así
-          como los beneficios y facilidades asumidos por el Banco
+          organización. Este detalle está compuesto por tus compensación
+          monetaria, el aporte que el BCP realiza para incrementar tus
+          beneficios y los ahorros que has tenido por ser colaborador del BCP.
         </p>
         {/* <p className="mail__description flexo-demi mx-auto">
           Al ser parte del equipo WOW, recibe un paquete de RECOMPENSA TOTAL,

@@ -8,7 +8,7 @@
         "MACROCATEGORIA": "CTA",
         "CATEGORIA": "Sub Total",
         "PRCTJ": "0.32",
-        "MONTO": "70145.24",
+        "MONTO": "70145.00",
         "COLOR": "#FFFFF",
         "NOMBRES_COLAB": "MICHAEL BORJAS BELTRAN",
         "NOMBRE_JEFE": "ELIZABETH ROJAS"
@@ -44,7 +44,7 @@
         "MACROCATEGORIA": "CTA",
         "CATEGORIA": "Pagos adicionales",
         "PRCTJ": "0.00",
-        "MONTO": "468.33",
+        "MONTO": "468.00",
         "COLOR": "#0a47f0",
         "NOMBRES_COLAB": "MICHAEL BORJAS BELTRAN",
         "NOMBRE_JEFE": "ELIZABETH ROJAS"
@@ -56,7 +56,7 @@
         "MACROCATEGORIA": "CTA",
         "CATEGORIA": "Gratificacion",
         "PRCTJ": "0.04",
-        "MONTO": "8219.76",
+        "MONTO": "8220.00",
         "COLOR": "#3d77ff",
         "NOMBRES_COLAB": "MICHAEL BORJAS BELTRAN",
         "NOMBRE_JEFE": "ELIZABETH ROJAS"
@@ -80,7 +80,7 @@
         "MACROCATEGORIA": "CTA",
         "CATEGORIA": "PUL",
         "PRCTJ": "0.04",
-        "MONTO": "8166.65",
+        "MONTO": "8167.00",
         "COLOR": "#005e53",
         "NOMBRES_COLAB": "MICHAEL BORJAS BELTRAN",
         "NOMBRE_JEFE": "ELIZABETH ROJAS"
@@ -92,7 +92,7 @@
         "MACROCATEGORIA": "CTA",
         "CATEGORIA": "PAU",
         "PRCTJ": "0.01",
-        "MONTO": "2040.50",
+        "MONTO": "2041.00",
         "COLOR": "#1f9183",
         "NOMBRES_COLAB": "MICHAEL BORJAS BELTRAN",
         "NOMBRE_JEFE": "ELIZABETH ROJAS"
@@ -284,7 +284,7 @@
         "MACROCATEGORIA": "TOTAL",
         "CATEGORIA": "Total",
         "PRCTJ": "1.00",
-        "MONTO": "217440.48",
+        "MONTO": "217441.00",
         "COLOR": "#FFFFF",
         "NOMBRES_COLAB": "MICHAEL BORJAS BELTRAN",
         "NOMBRE_JEFE": "ELIZABETH ROJAS"
@@ -300,7 +300,7 @@
         "MACROCATEGORIA": "CTA",
         "CATEGORIA": "Sub Total",
         "PRCTJ": "0.32",
-        "MONTO": "70145.24",
+        "MONTO": "70145.00",
         "COLOR": "#FFFFF",
         "NOMBRES_COLAB": "GAMARRA SAMANIEGO GUSTAVO ADOLFO",
         "NOMBRE_JEFE": "ELIZABETH ROJAS"
@@ -336,7 +336,7 @@
         "MACROCATEGORIA": "CTA",
         "CATEGORIA": "Pagos adicionales",
         "PRCTJ": "0.00",
-        "MONTO": "468.33",
+        "MONTO": "468.00",
         "COLOR": "#0a47f0",
         "NOMBRES_COLAB": "GAMARRA SAMANIEGO GUSTAVO ADOLFO",
         "NOMBRE_JEFE": "ELIZABETH ROJAS"
@@ -348,7 +348,7 @@
         "MACROCATEGORIA": "CTA",
         "CATEGORIA": "Gratificacion",
         "PRCTJ": "0.04",
-        "MONTO": "8219.76",
+        "MONTO": "8220.00",
         "COLOR": "#3d77ff",
         "NOMBRES_COLAB": "GAMARRA SAMANIEGO GUSTAVO ADOLFO",
         "NOMBRE_JEFE": "ELIZABETH ROJAS"
@@ -372,7 +372,7 @@
         "MACROCATEGORIA": "CTA",
         "CATEGORIA": "PUL",
         "PRCTJ": "0.04",
-        "MONTO": "8166.65",
+        "MONTO": "8167.00",
         "COLOR": "#005e53",
         "NOMBRES_COLAB": "GAMARRA SAMANIEGO GUSTAVO ADOLFO",
         "NOMBRE_JEFE": "ELIZABETH ROJAS"
@@ -384,7 +384,7 @@
         "MACROCATEGORIA": "CTA",
         "CATEGORIA": "PAU",
         "PRCTJ": "0.01",
-        "MONTO": "2040.50",
+        "MONTO": "2041.00",
         "COLOR": "#1f9183",
         "NOMBRES_COLAB": "GAMARRA SAMANIEGO GUSTAVO ADOLFO",
         "NOMBRE_JEFE": "ELIZABETH ROJAS"
@@ -576,7 +576,7 @@
         "MACROCATEGORIA": "TOTAL",
         "CATEGORIA": "Total",
         "PRCTJ": "1.00",
-        "MONTO": "217440.48",
+        "MONTO": "217441.00",
         "COLOR": "#FFFFF",
         "NOMBRES_COLAB": "GAMARRA SAMANIEGO GUSTAVO ADOLFO",
         "NOMBRE_JEFE": "ELIZABETH ROJAS"
@@ -592,7 +592,7 @@
         "MACROCATEGORIA": "CTA",
         "CATEGORIA": "Sub Total",
         "PRCTJ": "0.32",
-        "MONTO": "70145.24",
+        "MONTO": "70145.00",
         "COLOR": "#FFFFF",
         "NOMBRES_COLAB": "TRUJILLO FLORES MELISSA ANDREA",
         "NOMBRE_JEFE": "ELIZABETH ROJAS"
@@ -628,7 +628,7 @@
         "MACROCATEGORIA": "CTA",
         "CATEGORIA": "Pagos adicionales",
         "PRCTJ": "0.00",
-        "MONTO": "468.33",
+        "MONTO": "468.00",
         "COLOR": "#0a47f0",
         "NOMBRES_COLAB": "TRUJILLO FLORES MELISSA ANDREA",
         "NOMBRE_JEFE": "ELIZABETH ROJAS"
@@ -640,7 +640,7 @@
         "MACROCATEGORIA": "CTA",
         "CATEGORIA": "Gratificacion",
         "PRCTJ": "0.04",
-        "MONTO": "8219.76",
+        "MONTO": "8220.00",
         "COLOR": "#3d77ff",
         "NOMBRES_COLAB": "TRUJILLO FLORES MELISSA ANDREA",
         "NOMBRE_JEFE": "ELIZABETH ROJAS"
@@ -664,7 +664,7 @@
         "MACROCATEGORIA": "CTA",
         "CATEGORIA": "PUL",
         "PRCTJ": "0.04",
-        "MONTO": "8166.65",
+        "MONTO": "8167.00",
         "COLOR": "#005e53",
         "NOMBRES_COLAB": "TRUJILLO FLORES MELISSA ANDREA",
         "NOMBRE_JEFE": "ELIZABETH ROJAS"
@@ -676,7 +676,7 @@
         "MACROCATEGORIA": "CTA",
         "CATEGORIA": "PAU",
         "PRCTJ": "0.01",
-        "MONTO": "2040.50",
+        "MONTO": "2041.00",
         "COLOR": "#1f9183",
         "NOMBRES_COLAB": "TRUJILLO FLORES MELISSA ANDREA",
         "NOMBRE_JEFE": "ELIZABETH ROJAS"
@@ -868,7 +868,7 @@
         "MACROCATEGORIA": "TOTAL",
         "CATEGORIA": "Total",
         "PRCTJ": "1.00",
-        "MONTO": "217440.48",
+        "MONTO": "217441.00",
         "COLOR": "#FFFFF",
         "NOMBRES_COLAB": "TRUJILLO FLORES MELISSA ANDREA",
         "NOMBRE_JEFE": "ELIZABETH ROJAS"
@@ -884,7 +884,7 @@
         "MACROCATEGORIA": "CTA",
         "CATEGORIA": "Sub Total",
         "PRCTJ": "0.32",
-        "MONTO": "70145.24",
+        "MONTO": "70145.00",
         "COLOR": "#FFFFF",
         "NOMBRES_COLAB": "AREVALO HUERTA ELIZABETH",
         "NOMBRE_JEFE": "ELIZABETH ROJAS"
@@ -920,7 +920,7 @@
         "MACROCATEGORIA": "CTA",
         "CATEGORIA": "Pagos adicionales",
         "PRCTJ": "0.00",
-        "MONTO": "468.33",
+        "MONTO": "468.00",
         "COLOR": "#0a47f0",
         "NOMBRES_COLAB": "AREVALO HUERTA ELIZABETH",
         "NOMBRE_JEFE": "ELIZABETH ROJAS"
@@ -932,7 +932,7 @@
         "MACROCATEGORIA": "CTA",
         "CATEGORIA": "Gratificacion",
         "PRCTJ": "0.04",
-        "MONTO": "8219.76",
+        "MONTO": "8220.00",
         "COLOR": "#3d77ff",
         "NOMBRES_COLAB": "AREVALO HUERTA ELIZABETH",
         "NOMBRE_JEFE": "ELIZABETH ROJAS"
@@ -956,7 +956,7 @@
         "MACROCATEGORIA": "CTA",
         "CATEGORIA": "PUL",
         "PRCTJ": "0.04",
-        "MONTO": "8166.65",
+        "MONTO": "8167.00",
         "COLOR": "#005e53",
         "NOMBRES_COLAB": "AREVALO HUERTA ELIZABETH",
         "NOMBRE_JEFE": "ELIZABETH ROJAS"
@@ -968,7 +968,7 @@
         "MACROCATEGORIA": "CTA",
         "CATEGORIA": "PAU",
         "PRCTJ": "0.01",
-        "MONTO": "2040.50",
+        "MONTO": "2041.00",
         "COLOR": "#1f9183",
         "NOMBRES_COLAB": "AREVALO HUERTA ELIZABETH",
         "NOMBRE_JEFE": "ELIZABETH ROJAS"
@@ -1160,7 +1160,7 @@
         "MACROCATEGORIA": "TOTAL",
         "CATEGORIA": "Total",
         "PRCTJ": "1.00",
-        "MONTO": "217440.48",
+        "MONTO": "217441.00",
         "COLOR": "#FFFFF",
         "NOMBRES_COLAB": "AREVALO HUERTA ELIZABETH",
         "NOMBRE_JEFE": "ELIZABETH ROJAS"
@@ -1176,7 +1176,7 @@
         "MACROCATEGORIA": "CTA",
         "CATEGORIA": "Sub Total",
         "PRCTJ": "0.32",
-        "MONTO": "70145.24",
+        "MONTO": "70145.00",
         "COLOR": "#FFFFF",
         "NOMBRES_COLAB": "TEMOCHE MENDIGUREN RICARDO EDUARDO",
         "NOMBRE_JEFE": "ELIZABETH ROJAS"
@@ -1212,7 +1212,7 @@
         "MACROCATEGORIA": "CTA",
         "CATEGORIA": "Pagos adicionales",
         "PRCTJ": "0.00",
-        "MONTO": "468.33",
+        "MONTO": "468.00",
         "COLOR": "#0a47f0",
         "NOMBRES_COLAB": "TEMOCHE MENDIGUREN RICARDO EDUARDO",
         "NOMBRE_JEFE": "ELIZABETH ROJAS"
@@ -1224,7 +1224,7 @@
         "MACROCATEGORIA": "CTA",
         "CATEGORIA": "Gratificacion",
         "PRCTJ": "0.04",
-        "MONTO": "8219.76",
+        "MONTO": "8220.00",
         "COLOR": "#3d77ff",
         "NOMBRES_COLAB": "TEMOCHE MENDIGUREN RICARDO EDUARDO",
         "NOMBRE_JEFE": "ELIZABETH ROJAS"
@@ -1248,7 +1248,7 @@
         "MACROCATEGORIA": "CTA",
         "CATEGORIA": "PUL",
         "PRCTJ": "0.04",
-        "MONTO": "8166.65",
+        "MONTO": "8167.00",
         "COLOR": "#005e53",
         "NOMBRES_COLAB": "TEMOCHE MENDIGUREN RICARDO EDUARDO",
         "NOMBRE_JEFE": "ELIZABETH ROJAS"
@@ -1260,7 +1260,7 @@
         "MACROCATEGORIA": "CTA",
         "CATEGORIA": "PAU",
         "PRCTJ": "0.01",
-        "MONTO": "2040.50",
+        "MONTO": "2041.00",
         "COLOR": "#1f9183",
         "NOMBRES_COLAB": "TEMOCHE MENDIGUREN RICARDO EDUARDO",
         "NOMBRE_JEFE": "ELIZABETH ROJAS"
@@ -1452,7 +1452,7 @@
         "MACROCATEGORIA": "TOTAL",
         "CATEGORIA": "Total",
         "PRCTJ": "1.00",
-        "MONTO": "217440.48",
+        "MONTO": "217441.00",
         "COLOR": "#FFFFF",
         "NOMBRES_COLAB": "TEMOCHE MENDIGUREN RICARDO EDUARDO",
         "NOMBRE_JEFE": "ELIZABETH ROJAS"
@@ -1468,7 +1468,7 @@
         "MACROCATEGORIA": "CTA",
         "CATEGORIA": "Sub Total",
         "PRCTJ": "0.32",
-        "MONTO": "70145.24",
+        "MONTO": "70145.00",
         "COLOR": "#FFFFF",
         "NOMBRES_COLAB": "DEL CASTILLO GUTIERREZ LYA CIBELE",
         "NOMBRE_JEFE": "ELIZABETH ROJAS"
@@ -1504,7 +1504,7 @@
         "MACROCATEGORIA": "CTA",
         "CATEGORIA": "Pagos adicionales",
         "PRCTJ": "0.00",
-        "MONTO": "468.33",
+        "MONTO": "468.00",
         "COLOR": "#0a47f0",
         "NOMBRES_COLAB": "DEL CASTILLO GUTIERREZ LYA CIBELE",
         "NOMBRE_JEFE": "ELIZABETH ROJAS"
@@ -1516,7 +1516,7 @@
         "MACROCATEGORIA": "CTA",
         "CATEGORIA": "Gratificacion",
         "PRCTJ": "0.04",
-        "MONTO": "8219.76",
+        "MONTO": "8220.00",
         "COLOR": "#3d77ff",
         "NOMBRES_COLAB": "DEL CASTILLO GUTIERREZ LYA CIBELE",
         "NOMBRE_JEFE": "ELIZABETH ROJAS"
@@ -1540,7 +1540,7 @@
         "MACROCATEGORIA": "CTA",
         "CATEGORIA": "PUL",
         "PRCTJ": "0.04",
-        "MONTO": "8166.65",
+        "MONTO": "8167.00",
         "COLOR": "#005e53",
         "NOMBRES_COLAB": "DEL CASTILLO GUTIERREZ LYA CIBELE",
         "NOMBRE_JEFE": "ELIZABETH ROJAS"
@@ -1552,7 +1552,7 @@
         "MACROCATEGORIA": "CTA",
         "CATEGORIA": "PAU",
         "PRCTJ": "0.01",
-        "MONTO": "2040.50",
+        "MONTO": "2041.00",
         "COLOR": "#1f9183",
         "NOMBRES_COLAB": "DEL CASTILLO GUTIERREZ LYA CIBELE",
         "NOMBRE_JEFE": "ELIZABETH ROJAS"
@@ -1744,7 +1744,7 @@
         "MACROCATEGORIA": "TOTAL",
         "CATEGORIA": "Total",
         "PRCTJ": "1.00",
-        "MONTO": "217440.48",
+        "MONTO": "217441.00",
         "COLOR": "#FFFFF",
         "NOMBRES_COLAB": "DEL CASTILLO GUTIERREZ LYA CIBELE",
         "NOMBRE_JEFE": "ELIZABETH ROJAS"
@@ -1760,7 +1760,7 @@
         "MACROCATEGORIA": "CTA",
         "CATEGORIA": "Sub Total",
         "PRCTJ": "0.32",
-        "MONTO": "70145.24",
+        "MONTO": "70145.00",
         "COLOR": "#FFFFF",
         "NOMBRES_COLAB": "CHANG REYES LEYLA ROSA",
         "NOMBRE_JEFE": "ELIZABETH ROJAS"
@@ -1796,7 +1796,7 @@
         "MACROCATEGORIA": "CTA",
         "CATEGORIA": "Pagos adicionales",
         "PRCTJ": "0.00",
-        "MONTO": "468.33",
+        "MONTO": "468.00",
         "COLOR": "#0a47f0",
         "NOMBRES_COLAB": "CHANG REYES LEYLA ROSA",
         "NOMBRE_JEFE": "ELIZABETH ROJAS"
@@ -1808,7 +1808,7 @@
         "MACROCATEGORIA": "CTA",
         "CATEGORIA": "Gratificacion",
         "PRCTJ": "0.04",
-        "MONTO": "8219.76",
+        "MONTO": "8220.00",
         "COLOR": "#3d77ff",
         "NOMBRES_COLAB": "CHANG REYES LEYLA ROSA",
         "NOMBRE_JEFE": "ELIZABETH ROJAS"
@@ -1832,7 +1832,7 @@
         "MACROCATEGORIA": "CTA",
         "CATEGORIA": "PUL",
         "PRCTJ": "0.04",
-        "MONTO": "8166.65",
+        "MONTO": "8167.00",
         "COLOR": "#005e53",
         "NOMBRES_COLAB": "CHANG REYES LEYLA ROSA",
         "NOMBRE_JEFE": "ELIZABETH ROJAS"
@@ -1844,7 +1844,7 @@
         "MACROCATEGORIA": "CTA",
         "CATEGORIA": "PAU",
         "PRCTJ": "0.01",
-        "MONTO": "2040.50",
+        "MONTO": "2041.00",
         "COLOR": "#1f9183",
         "NOMBRES_COLAB": "CHANG REYES LEYLA ROSA",
         "NOMBRE_JEFE": "ELIZABETH ROJAS"
@@ -2036,7 +2036,7 @@
         "MACROCATEGORIA": "TOTAL",
         "CATEGORIA": "Total",
         "PRCTJ": "1.00",
-        "MONTO": "217440.48",
+        "MONTO": "217441.00",
         "COLOR": "#FFFFF",
         "NOMBRES_COLAB": "CHANG REYES LEYLA ROSA",
         "NOMBRE_JEFE": "ELIZABETH ROJAS"
@@ -2052,7 +2052,7 @@
         "MACROCATEGORIA": "CTA",
         "CATEGORIA": "Sub Total",
         "PRCTJ": "0.32",
-        "MONTO": "70145.24",
+        "MONTO": "70145.00",
         "COLOR": "#FFFFF",
         "NOMBRES_COLAB": "VARGAS VIDAL HERBERT CHARLIE",
         "NOMBRE_JEFE": "ELIZABETH ROJAS"
@@ -2088,7 +2088,7 @@
         "MACROCATEGORIA": "CTA",
         "CATEGORIA": "Pagos adicionales",
         "PRCTJ": "0.00",
-        "MONTO": "468.33",
+        "MONTO": "468.00",
         "COLOR": "#0a47f0",
         "NOMBRES_COLAB": "VARGAS VIDAL HERBERT CHARLIE",
         "NOMBRE_JEFE": "ELIZABETH ROJAS"
@@ -2100,7 +2100,7 @@
         "MACROCATEGORIA": "CTA",
         "CATEGORIA": "Gratificacion",
         "PRCTJ": "0.04",
-        "MONTO": "8219.76",
+        "MONTO": "8220.00",
         "COLOR": "#3d77ff",
         "NOMBRES_COLAB": "VARGAS VIDAL HERBERT CHARLIE",
         "NOMBRE_JEFE": "ELIZABETH ROJAS"
@@ -2124,7 +2124,7 @@
         "MACROCATEGORIA": "CTA",
         "CATEGORIA": "PUL",
         "PRCTJ": "0.04",
-        "MONTO": "8166.65",
+        "MONTO": "8167.00",
         "COLOR": "#005e53",
         "NOMBRES_COLAB": "VARGAS VIDAL HERBERT CHARLIE",
         "NOMBRE_JEFE": "ELIZABETH ROJAS"
@@ -2136,7 +2136,7 @@
         "MACROCATEGORIA": "CTA",
         "CATEGORIA": "PAU",
         "PRCTJ": "0.01",
-        "MONTO": "2040.50",
+        "MONTO": "2041.00",
         "COLOR": "#1f9183",
         "NOMBRES_COLAB": "VARGAS VIDAL HERBERT CHARLIE",
         "NOMBRE_JEFE": "ELIZABETH ROJAS"
@@ -2328,7 +2328,7 @@
         "MACROCATEGORIA": "TOTAL",
         "CATEGORIA": "Total",
         "PRCTJ": "1.00",
-        "MONTO": "217440.48",
+        "MONTO": "217441.00",
         "COLOR": "#FFFFF",
         "NOMBRES_COLAB": "VARGAS VIDAL HERBERT CHARLIE",
         "NOMBRE_JEFE": "ELIZABETH ROJAS"
@@ -2344,7 +2344,7 @@
         "MACROCATEGORIA": "CTA",
         "CATEGORIA": "Sub Total",
         "PRCTJ": "0.32",
-        "MONTO": "70145.24",
+        "MONTO": "70145.00",
         "COLOR": "#FFFFF",
         "NOMBRES_COLAB": "PRADO VIGIL ANA ISABEL",
         "NOMBRE_JEFE": "ELIZABETH ROJAS"
@@ -2380,7 +2380,7 @@
         "MACROCATEGORIA": "CTA",
         "CATEGORIA": "Pagos adicionales",
         "PRCTJ": "0.00",
-        "MONTO": "468.33",
+        "MONTO": "468.00",
         "COLOR": "#0a47f0",
         "NOMBRES_COLAB": "PRADO VIGIL ANA ISABEL",
         "NOMBRE_JEFE": "ELIZABETH ROJAS"
@@ -2392,7 +2392,7 @@
         "MACROCATEGORIA": "CTA",
         "CATEGORIA": "Gratificacion",
         "PRCTJ": "0.04",
-        "MONTO": "8219.76",
+        "MONTO": "8220.00",
         "COLOR": "#3d77ff",
         "NOMBRES_COLAB": "PRADO VIGIL ANA ISABEL",
         "NOMBRE_JEFE": "ELIZABETH ROJAS"
@@ -2416,7 +2416,7 @@
         "MACROCATEGORIA": "CTA",
         "CATEGORIA": "PUL",
         "PRCTJ": "0.04",
-        "MONTO": "8166.65",
+        "MONTO": "8167.00",
         "COLOR": "#005e53",
         "NOMBRES_COLAB": "PRADO VIGIL ANA ISABEL",
         "NOMBRE_JEFE": "ELIZABETH ROJAS"
@@ -2428,7 +2428,7 @@
         "MACROCATEGORIA": "CTA",
         "CATEGORIA": "PAU",
         "PRCTJ": "0.01",
-        "MONTO": "2040.50",
+        "MONTO": "2041.00",
         "COLOR": "#1f9183",
         "NOMBRES_COLAB": "PRADO VIGIL ANA ISABEL",
         "NOMBRE_JEFE": "ELIZABETH ROJAS"
@@ -2620,7 +2620,7 @@
         "MACROCATEGORIA": "TOTAL",
         "CATEGORIA": "Total",
         "PRCTJ": "1.00",
-        "MONTO": "217440.48",
+        "MONTO": "217441.00",
         "COLOR": "#FFFFF",
         "NOMBRES_COLAB": "PRADO VIGIL ANA ISABEL",
         "NOMBRE_JEFE": "ELIZABETH ROJAS"

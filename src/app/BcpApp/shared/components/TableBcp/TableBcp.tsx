@@ -13,6 +13,14 @@ export const TableBcp: React.FC<IProps> = ({
 }) => {
   const isNotTotal: boolean = macrocategoria.trim() !== "TOTAL";
 
+  const objMacro: Record<string, string> = {
+    CTA: "CTA: Los ingresos que recibiste",
+    "APORTES BCP": "Aporte BCP: Lo que el BCP aportó",
+    "AHORRO BCP": "Ahorro BCP: Lo que ahorraste",
+  };
+
+  const macroCategoria: string = objMacro[macrocategoria] || macrocategoria;
+
   if (!isNotTotal) return <></>;
 
   return (
@@ -26,7 +34,7 @@ export const TableBcp: React.FC<IProps> = ({
         <tbody className="table-bcp__body">
           {isNotTotal && (
             <tr className="table-bcp__header">
-              <td className="table-bcp__title flexo-bold">{macrocategoria}</td>
+              <td className="table-bcp__title flexo-bold">{macroCategoria}</td>
             </tr>
           )}
           {data.reverse().map((item) => (
