@@ -10,6 +10,7 @@ export interface IRecompense_ {
 export interface IApp {
   uid: string;
   name: string;
+  nameBase: string;
   dni: string;
   recompense: IRecompense_[];
 }

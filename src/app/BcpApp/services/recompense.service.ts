@@ -9,7 +9,8 @@ interface IQuerySql {
 }
 const postRecompense = async (
   uid: string,
-  dni: string
+  dni: string,
+  nameBase: string
 ): Promise<IApp | undefined> => {
   try {
     let res: Response;
@@ -30,7 +31,7 @@ const postRecompense = async (
       data = dataJson.find((item) => item.d[0].ID_MATRICULA === uid)!.d;
     }
 
-    return getBcpAppAdapter(data, dni);
+    return getBcpAppAdapter(data, dni, nameBase);
   } catch (error) {
     console.log(error);
   }

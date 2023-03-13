@@ -16,6 +16,7 @@ export const List = () => {
                   <th scope="col">#</th>
                   <th scope="col">Código</th>
                   <th scope="col">Nombre</th>
+                  <th scope="col">Nombre de saludo</th>
                   <th scope="col">Enlace</th>
                 </tr>
               </thead>
@@ -25,6 +26,7 @@ export const List = () => {
                     <th scope="row">{i}</th>
                     <td>{user.uid}</td>
                     <td>{user.name}</td>
+                    <td>{user.nameBase}</td>
                     <td>
                       <Link to={"/?code=" + user.uid}>Link</Link>
                     </td>

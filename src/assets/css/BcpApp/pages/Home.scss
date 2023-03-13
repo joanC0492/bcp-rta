@@ -66,10 +66,13 @@
     border-radius: 4px;
   }
   &__header-img {
-    max-width: 100%;
+    // max-width: 100%;
     max-width: 250px;
     @media (max-width: 767px) {
       width: 160px;
+    }
+    &--img {
+      max-width: 100%;
     }
   }
   &__cloud-whithe {
@@ -115,9 +118,23 @@
       font-size: 16px;
     }
     &--image {
-      font-size: 34px;
+      font-size: 38px;
       margin-inline: auto;
       margin-bottom: 0.25rem;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        background-image: url("../images/line-image.png");
+        background-position: left bottom;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        z-index: 9;
+        width: 431px;
+        height: 268px;
+        left: calc(50% - 80px);
+        top: 58px;
+      }
     }
   }
   &__table-parent {
@@ -272,5 +289,29 @@
     @media (max-width: 767px) {
       font-size: 15px;
     }
+  }
+}
+
+.experiencia-woow {
+  &__parent {
+    position: absolute;
+    left: 90px;
+    top: 165px;
+  }
+}
+
+.image-alert {
+  background-color: #fff;
+  max-width: 360px;
+  margin: auto;
+  font-size: 18px;
+  border-radius: 10px;
+  max-width: 480px;
+  width: 100%;
+  padding-block: 10px;
+  padding-block: 10px;
+  &__txt {
+    color: #005dbd;
+    margin-bottom: 0;
   }
 }

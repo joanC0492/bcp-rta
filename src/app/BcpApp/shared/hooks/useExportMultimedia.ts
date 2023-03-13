@@ -44,7 +44,7 @@ export const useExportMultimedia = () => {
     // const $app = document.getElementById("app") as HTMLElement;
     // console.log("imageRef", imageRef);
     const $app = mailRef.current as HTMLDivElement;
-    
+
     console.log($app);
     // Modificamos estilos al hacer la captura
     changeClasses("remove");

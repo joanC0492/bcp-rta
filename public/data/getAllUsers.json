@@ -4,54 +4,63 @@
       "__type": "User",
       "UID": "571112",
       "NAME": "MICHAEL BORJAS BELTRAN",
+      "NAME_BASE": "Michael",
       "DNI": "46515992"
     },
     {
       "__type": "User",
       "UID": "217731",
       "NAME": "GAMARRA SAMANIEGO GUSTAVO ADOLFO",
+      "NAME_BASE": "Gustavo",
       "DNI": "09542946"
     },
     {
       "__type": "User",
       "UID": "577275",
       "NAME": "TRUJILLO FLORES MELISSA ANDREA",
+      "NAME_BASE": "Melissa",
       "DNI": "75610466"
     },
     {
       "__type": "User",
       "UID": "513464",
       "NAME": "AREVALO HUERTA ELIZABETH",
+      "NAME_BASE": "Elizabeth",
       "DNI": "09277797"
     },
     {
       "__type": "User",
       "UID": "546751",
       "NAME": "TEMOCHE MENDIGUREN RICARDO EDUARDO",
+      "NAME_BASE": "Ricardo",
       "DNI": "41893433"
     },
     {
       "__type": "User",
       "UID": "593738",
       "NAME": "DEL CASTILLO GUTIERREZ LYA CIBELE",
+      "NAME_BASE": "Lya",
       "DNI": "71014084"
     },
     {
       "__type": "User",
       "UID": "620338",
       "NAME": "CHANG REYES LEYLA ROSA",
+      "NAME_BASE": "Leyla",
       "DNI": "72621449"
     },
     {
       "__type": "User",
       "UID": "620819",
       "NAME": "VARGAS VIDAL HERBERT CHARLIE",
+      "NAME_BASE": "Herbert",
       "DNI": "44894675"
     },
     {
       "__type": "User",
       "UID": "630620",
       "NAME": "PRADO VIGIL ANA ISABEL",
+      "NAME_BASE": "Ana",
       "DNI": "46838673"
     }
   ]
