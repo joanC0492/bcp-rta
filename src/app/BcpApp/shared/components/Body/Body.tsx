@@ -25,7 +25,7 @@ export const Body = () => {
           retribuir el logro de nuestras metas y objetivos así como recompensar
           el alto desempeño.
         </p>
-        <p className="mail__description flexo-regular mx-auto">
+        <p className="mail__description flexo-regular mx-auto mb-1">
           Te compartimos el detalle de la Recompensa Total Anual que disfrutaste
           en el 2022 gracias a tu contribución a los excelentes resultados de la
           organización. Este detalle está compuesto por tus compensación

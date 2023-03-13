@@ -14,9 +14,9 @@ export const TableBcp: React.FC<IProps> = ({
   const isNotTotal: boolean = macrocategoria.trim() !== "TOTAL";
 
   const objMacro: Record<string, string> = {
-    CTA: "CTA: Los ingresos que recibiste",
-    "APORTES BCP": "Aporte BCP: Lo que el BCP aportó",
-    "AHORRO BCP": "Ahorro BCP: Lo que ahorraste",
+    CTA: "Los ingresos que recibiste",
+    "APORTES BCP": "Lo que el BCP aportó",
+    "AHORRO BCP": "Lo que ahorraste",
   };
 
   const macroCategoria: string = objMacro[macrocategoria] || macrocategoria;
