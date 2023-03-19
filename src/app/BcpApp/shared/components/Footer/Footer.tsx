@@ -1,4 +1,5 @@
-import { srcImages } from "@/shared/helpers";
+import { pdfData } from "@/app/BcpApp/data/pdfData";
+import { getUrlProd } from "@/shared/helpers";
 
 interface IProps {
   classes?: string;
@@ -7,7 +8,7 @@ export const Footer: React.FC<IProps> = ({ classes = "text-center" }) => {
   return (
     <footer className={`mail__footer ${classes}`}>
       <img
-        src={srcImages + "/logo-footer.png"}
+        src={getUrlProd + pdfData.imgFooter}
         alt="Logo Footer"
         className="mail__footer-img"
       />

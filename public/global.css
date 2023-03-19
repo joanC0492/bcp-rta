@@ -1,7 +1,6 @@
 :root {
   --h-img: 0;
 }
-
 @font-face {
   font-family: "Flexo";
   src: url("/front-production/fonts/flexo-regular/Flexo-Regular.ttf")
@@ -41,6 +40,36 @@
   font-weight: 700;
   font-style: italic;
 }
+@font-face {
+  font-family: "Flexo-heavy";
+  src: url("/front-production/fonts/flexo-heavy/Flexo-Heavy.ttf")
+      format("truetype"),
+    url("/front-production/fonts/flexo-heavy/Flexo-Heavy.woff2") format("woff2"),
+    url("/front-production/fonts/flexo-heavy/Flexo-Heavy.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Flexo-medium";
+  src: url("/front-production/fonts/flexo-medium/Flexo-Medium.ttf")
+      format("truetype"),
+    url("/front-production/fonts/flexo-medium/Flexo-Medium.woff2")
+      format("woff2"),
+    url("/front-production/fonts/flexo-medium/Flexo-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Flexo-mediumit";
+  src: url("/front-production/fonts/flexo-mediumit/Flexo-MediumIt.ttf")
+      format("truetype"),
+    url("/front-production/fonts/flexo-mediumit/Flexo-MediumIt.woff2")
+      format("woff2"),
+    url("/front-production/fonts/flexo-mediumit/Flexo-MediumIt.woff")
+      format("woff");
+  font-weight: 500;
+  font-style: italic;
+}
 
 #app {
   background: #00b0d0;
@@ -50,6 +79,7 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b0d0', endColorstr='#012e8a',GradientType=0 );
   background-repeat: no-repeat;
 }
+
 .flexo-regular {
   font-family: "Flexo";
 }
@@ -61,4 +91,13 @@
 }
 .flexo-boldit {
   font-family: "Flexo-boldit";
+}
+.flexo-heavy {
+  font-family: "Flexo-heavy";
+}
+.flexo-medium {
+  font-family: "Flexo-medium";
+}
+.flexo-mediumit {
+  font-family: "Flexo-mediumit";
 }

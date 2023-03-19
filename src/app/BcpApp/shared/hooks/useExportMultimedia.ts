@@ -8,7 +8,7 @@ const NAME_PDF_IMG: string = "RecompensaTotal_";
 export const useExportMultimedia = () => {
   const { app } = useRecompenseContext();
   const [loading, setLoading] = useState<boolean>(false);
-  const [showViewImage, setShowViewImage] = useState<boolean>(false);
+  const [showViewImage, setShowViewImage] = useState<boolean>(true);
 
   const mailRef = useRef<HTMLDivElement>(null);
   const imageRef = useRef<HTMLDivElement>(null);

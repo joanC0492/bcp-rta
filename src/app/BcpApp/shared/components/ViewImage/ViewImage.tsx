@@ -1,3 +1,4 @@
+import { imageData } from "@/app/BcpApp/data/imageData";
 import { Benefit, Footer, Header } from "@/app/BcpApp/shared/components";
 import { useRecompenseContext } from "@/app/BcpApp/store/context";
 import { getUrlProd } from "@/shared/helpers";
@@ -22,45 +23,27 @@ export const ViewImage = () => {
         </div>
 
         <div className="mt-4">
-          <p className="flexo-regular h4 text-white">
-            Este 2022 hemos superado muchos retos juntos logrando cumplir
-            nuestros objetivos.
-          </p>
-          <p className="flexo-regular h4 text-white">
-            ¡Gracias a tu compromiso con el Banco, logramos transformar tus
-            planes en realidad y los de nuestros clientes!
-          </p>
-          <p className="flexo-regular h4 text-white">
-            Hoy queremos celebrar y compartir contigo el detalle de tu
-            Recompensa Total que disfrutaste en el 2022 por ser colaborador BCP.
-          </p>
-          {/* <p className="mail__title flexo-demi mx-auto mt-4">
-            ¡Gracias a tu compromiso con el Banco, logramos transformar planes
-            en realidad nuestros y de nuestros clientes!
-          </p> */}
+          <div className="">
+            <p className="flexo-regular h4 text-white">{imageData.text1}</p>
+            <p className="flexo-regular h4 text-white">{imageData.text2}</p>
+          </div>
         </div>
 
         <div className="mt-5">
           <div className="image-alert flexo-bold">
-            <p className="image-alert__txt">
-              Por eso, en el BCP, queremos que conozcas
-            </p>
-            <p className="image-alert__txt">
-              cuál es la RECOMPENSA TOTAL que haz
-            </p>
-            <p className="image-alert__txt">recibido durante el 2022</p>
+            <p className="image-alert__txt">{imageData.textAlert1}</p>
+            <p className="image-alert__txt">{imageData.textAlert2}</p>
+            <p className="image-alert__txt">{imageData.textAlert3}</p>
           </div>
         </div>
 
         <div className="mt-5">
           <div>
             <p className="flexo-regular h5 text-white mb-0">
-              Para más información,
+              {imageData.textInfo1}
             </p>
-            <p className="flexo-regular h5 text-white">
-              descarga el adjunto del correo e
-            </p>
-            <p className="flexo-regular h5 text-white">ingresa tu DNI</p>
+            <p className="flexo-regular h5 text-white">{imageData.textInfo2}</p>
+            <p className="flexo-regular h5 text-white">{imageData.textInfo3}</p>
           </div>
           <div className="mt-2">
             <img
@@ -75,17 +58,16 @@ export const ViewImage = () => {
           <p
             className="flexo-demi h4 text-white mb-0"
             style={{ fontSize: "22px" }}>
-            Recuerda que en el BCP contamos con más beneficios que puedes
-            disfrutar
+            {imageData.textRecuerda1}
           </p>
         </div>
 
         <div className="mt-4">
           <div className="mx-auto" style={{ width: "80%" }}>
             <div className="row">
-              <Benefit text={"Plataforma de Bienestar"} />
-              <Benefit text={"Beneficios financieros"} />
-              <Benefit text={"Seguro Oncológico"} />
+              <Benefit text={imageData.textBeneficio1} />
+              <Benefit text={imageData.textBeneficio2} />
+              <Benefit text={imageData.textBeneficio3} />
             </div>
           </div>
         </div>

@@ -1,3 +1,4 @@
+import { pdfData } from "@/app/BcpApp/data/pdfData";
 import { srcImages } from "@/shared/helpers";
 
 interface IProps {
@@ -19,7 +20,9 @@ export const Header: React.FC<IProps> = ({ classes = "", classesImg }) => {
           className="mail__cloud-img"
         />
         <div className="position-absolute top-0 start-0">
-          <p className="mail__cloud-txt flexo-boldit">Recompensa a la medida</p>
+          <p className="mail__cloud-txt flexo-boldit">
+            {pdfData.textHeaderGlobo}
+          </p>
         </div>
       </div>
     </header>

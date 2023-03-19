@@ -122,19 +122,20 @@
       margin-inline: auto;
       margin-bottom: 0.25rem;
       position: relative;
-      &::before {
-        content: "";
-        position: absolute;
-        background-image: url("../images/line-image.png");
-        background-position: left bottom;
-        background-repeat: no-repeat;
-        background-size: 100%;
-        z-index: 9;
-        width: 431px;
-        height: 268px;
-        left: calc(50% - 80px);
-        top: 58px;
-      }
+
+      // &::before {
+      //   content: "";
+      //   position: absolute;
+      //   background-image: url("../images/line-image.png");
+      //   background-position: left bottom;
+      //   background-repeat: no-repeat;
+      //   background-size: 100%;
+      //   z-index: 9;
+      //   width: 431px;
+      //   height: 268px;
+      //   left: calc(50% - 80px);
+      //   top: 58px;
+      // }
     }
   }
   &__table-parent {
@@ -198,6 +199,7 @@
   min-height: 628px;
 
   &::before {
+    display: none !important;
     content: "";
     position: absolute;
     background-image: url("../images/chanchito.png");
@@ -211,6 +213,15 @@
     // bottom: -120px;
     right: -43px;
     bottom: -66px;
+  }
+
+  &__before {
+    position: absolute;
+    z-index: 200;
+    width: 188px;
+    height: auto;
+    right: -43px;
+    bottom: -28px;
   }
 
   .table-bcp:nth-of-type(1) {
