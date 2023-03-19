@@ -14,14 +14,12 @@ export const Body = () => {
 
   return (
     <div className="mail__body">
-      <div style={{ textAlign: "justify" }}>
-        <p className="mail__description flexo-regular mx-auto">
-          {pdfData.text1}
-        </p>
-        <p className="mail__description flexo-regular mx-auto mb-1">
-          {pdfData.text2}
-        </p>
+      <div className="flexo-medium text-center" style={{ textAlign: "justify" }}>
+        <p className="mail__description mx-auto">{pdfData.text1}</p>
+        <p className="mail__description mx-auto">{pdfData.text2}</p>
+        <p className="mail__description mx-auto mb-1">{pdfData.text3}</p>
       </div>
+
       <div className="row mail__table-parent">
         <div className="col-md-5 pt-3">
           <img
@@ -53,7 +51,11 @@ export const Body = () => {
                 zindex={i}
               />
             ))}
-            <img src={getUrlProd + "/images/chanchito.png"} alt="chanchito" className="table-bcp-parent__before"/>
+            <img
+              src={getUrlProd + "/images/chanchito.png"}
+              alt="chanchito"
+              className="table-bcp-parent__before"
+            />
           </div>
         </div>
       </div>

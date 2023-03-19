@@ -6,16 +6,37 @@ export const imageData = {
   // text3:
   //   "Hoy queremos celebrar y compartir contigo el detalle de tu Recompensa Total que disfrutaste en el 2022 por ser colaborador BCP.",
 
-  textAlert1: "Por eso, en el BCP, queremos que conozcas",
-  textAlert2: "cuál es la RECOMPENSA TOTAL que haz",
-  textAlert3: "recibido durante el 2022",
+  textAlert1: "Hoy queremos celebrar y compartir contigo",
+  textAlert2: "el detalle de la Recompensa Total, que recibiste",
+  textAlert3: "por ser colaborador del BCP, duranteel 2022.",
+
+  // imgTitle2022: "/images/title-2022-image.svg",
+  imgTitle2022: "/images/title-2022-image.png",
 
   textInfo1: "Para más información,",
   textInfo2: "descarga el adjunto del correo e",
   textInfo3: "ingresa tu DNI",
 
   textRecuerda1:
-    "Recuerda que en el BCP contamos con más beneficios que puedes disfrutar",
+    "Además, no olvides que también puedes disfrutar de los siguiente beneficios:",
+
+  cardsBeneficios: [
+    {
+      id: 1,
+      title: "Gimnasios y<br/>centros deportivos.",
+      image: "/images/card-1.png",
+    },
+    {
+      id: 2,
+      title: "Crédito<br/>efectivo, hipotecario y vehicular.",
+      image: "/images/card-2.png",
+    },
+    {
+      id: 3,
+      title: "Seguro<br/>oncológico.",
+      image: "/images/card-3.png",
+    },
+  ],
 
   textBeneficio1: "Plataforma de Bienestar",
   textBeneficio2: "Beneficios financieros",

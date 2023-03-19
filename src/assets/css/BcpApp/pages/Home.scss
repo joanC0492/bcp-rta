@@ -46,7 +46,8 @@
   }
   &--image {
     min-height: 881px;
-    max-width: 750px;
+    // max-width: 750px;
+    max-width: 668px;
     &::before {
       display: none;
     }
@@ -111,14 +112,16 @@
   }
   &__description {
     color: #fff;
-    font-size: 16px;
+    // font-size: 16px;
+    font-size: 23px;
     line-height: 1.2;
     max-width: 605px;
     @media (max-width: 767px) {
       font-size: 16px;
     }
     &--image {
-      font-size: 38px;
+      // font-size: 38px;
+      font-size: 50px;
       margin-inline: auto;
       margin-bottom: 0.25rem;
       position: relative;
@@ -307,23 +310,25 @@
 .experiencia-woow {
   &__parent {
     position: absolute;
-    left: 90px;
-    top: 165px;
+    // left: 90px;
+    // top: 165px;
+    left: 30px;
+    bottom: 15px;
   }
 }
 
 .image-alert {
   background-color: #fff;
-  max-width: 360px;
   margin: auto;
   font-size: 18px;
   border-radius: 10px;
-  max-width: 480px;
+  max-width: 464px;
   width: 100%;
   padding-block: 10px;
-  padding-block: 10px;
+  line-height: 1.35;
   &__txt {
-    color: #005dbd;
+    // color: #005dbd;
+    color: #273589;
     margin-bottom: 0;
   }
 }

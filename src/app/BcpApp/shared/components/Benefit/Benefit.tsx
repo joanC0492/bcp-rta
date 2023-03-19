@@ -1,30 +1,30 @@
 import { getUrlProd } from "@/shared/helpers";
 
 interface IProps {
-  text: string;
+  id: number;
+  title: string;
+  image: string;
 }
-export const Benefit: React.FC<IProps> = ({ text }) => {
+export const Benefit: React.FC<IProps> = ({ title, image }) => {
   return (
-    <div className="col-4 position-relative">
+    <div className="col-4">
       <div>
         <img
           className="img-fluid"
-          src={getUrlProd + "/images/bg-beneficios.png"}
+          src={getUrlProd + image}
           alt="Background beneficios"
         />
       </div>
       <div
-        className="position-absolute flexo-demi"
+        className="flexo-mediumit"
         style={{
-          left: "21px",
-          top: "50px",
-          maxWidth: "135px",
+          maxWidth: "100%",
           margin: "auto",
-          fontSize: "16px",
+          fontSize: "18.71px",
           color: "white",
           lineHeight: "22px",
         }}>
-        <p className="mb-0">{text}</p>
+        <p className="mb-0" dangerouslySetInnerHTML={{ __html: title }}></p>
       </div>
     </div>
   );
