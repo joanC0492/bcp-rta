@@ -99,14 +99,15 @@
     margin-bottom: 0;
     font-size: 22px;
     line-height: 1.2;
-    padding: 25px 10px 10px 40px;
+    padding: 25px 10px 10px 50px;
     @media (max-width: 767px) {
       font-size: 16px;
       padding: 13.5px 10px 10px 30px;
     }
   }
   &__body {
-    padding-top: 25px;
+    // padding-top: 25px;
+    padding-top: 40px;
     & .table-bcp__row--bg {
       .table-bcp__col {
         line-height: 1;
@@ -181,7 +182,8 @@
   }
   &__table-parent {
     // padding-top: 7.5px;
-    padding-top: 0;
+    // padding-top: 0;
+    padding-top: 20px;
   }
   &__table-parent-employed {
     position: relative;
@@ -214,8 +216,8 @@
     }
   }
 
-  &__footer {
-  }
+  // &__footer {
+  // }
   &__footer-img {
     // max-width: 96px;
     max-width: 100%;

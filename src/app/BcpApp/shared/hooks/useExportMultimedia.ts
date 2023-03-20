@@ -62,34 +62,38 @@ export const useExportMultimedia = () => {
       let heightLeft = imgHeight;
       let position = 0;
       heightLeft -= pageHeight;
-
+      // const doc = new jsPDF("p", "mm", [297, 210]);
+      console.log(imgWidth, imgHeight);
+      // console.log([imgHeight, imgWidth]);
+      console.log([imgHeight, imgWidth]);
       const doc = new jsPDF({
         orientation: "p",
         unit: "mm",
-        format: "a4",
+        // format: "a4",
+        // format: [433, 210],
+        format: [imgHeight, imgWidth],
         encryption: {
           userPassword: app.dni,
           ownerPassword: "797233232#2ewwe24",
           userPermissions: ["print", "copy"],
         },
       });
-
       doc.addImage(canvas, "PNG", 0, position, imgWidth, imgHeight, "", "FAST");
-      while (heightLeft >= 0) {
-        position = heightLeft - imgHeight;
-        doc.addPage();
-        doc.addImage(
-          canvas,
-          "PNG",
-          0,
-          position,
-          imgWidth,
-          imgHeight,
-          "",
-          "FAST"
-        );
-        heightLeft -= pageHeight;
-      }
+      // while (heightLeft >= 0) {
+      //   position = heightLeft - imgHeight;
+      //   doc.addPage();
+      //   doc.addImage(
+      //     canvas,
+      //     "PNG",
+      //     0,
+      //     position,
+      //     imgWidth,
+      //     imgHeight,
+      //     "",
+      //     "FAST"
+      //   );
+      //   heightLeft -= pageHeight;
+      // }
       doc.save(NAME_PDF_IMG + app.uid + ".pdf");
 
       // Devolvemos las clases y los estilos seran los de un inicio
