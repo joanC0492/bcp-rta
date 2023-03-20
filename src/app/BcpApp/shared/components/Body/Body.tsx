@@ -113,7 +113,11 @@ export const Body = () => {
                     Revisa todos los beneficios que te ofrece
                   </p>
                   <p className="mb-0">
-                    el BCP para vivir una Experiencia WOW aquí.
+                    el BCP para vivir una Experiencia WOW{" "}
+                    <span
+                      style={{ color: "#FFB71C", textDecoration: "underline" }}>
+                      aquí.
+                    </span>
                   </p>
                 </div>
               </div>
