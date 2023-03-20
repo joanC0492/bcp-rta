@@ -24,28 +24,43 @@ export const TableBcp: React.FC<IProps> = ({
   if (!isNotTotal) return <></>;
 
   return (
-    <div
-      className="table-bcp"
-      style={{
-        zIndex: 100 - zindex,
-        top: `${-18 * zindex}px`,
-      }}>
+    <div className="table-bcp">
       <table className="table table-borderless table-bcp__tbl">
         <tbody className="table-bcp__body">
           {isNotTotal && (
-            <tr className="table-bcp__header">
-              <td className="table-bcp__title flexo-bold">{macroCategoria}</td>
-            </tr>
+            <>
+              <tr className="table-bcp__header">
+                <td className="table-bcp__title flexo-heavy">
+                  {macroCategoria}
+                </td>
+              </tr>
+              <tr className="table-bcp__row">
+                <td className="table-bcp__col">
+                  <div
+                    className="d-flex justify-content-between"
+                    style={{ paddingTop: "25px" }}>
+                    <span></span>
+                    <span
+                      className="table-bcp__txt flexo-bold"
+                      style={{ minWidth: "82px", paddingBottom: "5px" }}>
+                      S/
+                    </span>
+                  </div>
+                </td>
+              </tr>
+            </>
           )}
           {data.reverse().map((item) => (
-            <tr className="table-bcp__row" key={item.categoria}>
+            <tr
+              className="table-bcp__row table-bcp__row--bg"
+              key={item.categoria}>
               <td className="table-bcp__col">
                 <div className="d-flex justify-content-between">
                   <span
                     className={`
                       ${
                         isNotTotal
-                          ? "table-bcp__txt flexo-regular"
+                          ? "table-bcp__txt flexo-medium"
                           : "table-bcp__title flexo-bold"
                       }
                       ${item.categoria === "Sub Total" ? "flexo-bold" : ""}
@@ -56,12 +71,13 @@ export const TableBcp: React.FC<IProps> = ({
                     className={`table-bcp__txt 
                     ${
                       item.categoria === "Sub Total"
-                        ? "flexo-bold"
-                        : "flexo-regular"
+                        ? "flexo-bold asd"
+                        : "flexo-bold"
                     }
                     ${isNotTotal ? "" : "flexo-bold"}
                     `}>
-                    S/{item.monto.toLocaleString("en-US")}
+                    {item.categoria === "Sub Total" ? "S/ " : ""}
+                    {item.monto.toLocaleString("en-US")}
                   </span>
                 </div>
               </td>

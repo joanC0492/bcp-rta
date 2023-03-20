@@ -66,6 +66,7 @@ export const useExportMultimedia = () => {
       const doc = new jsPDF({
         orientation: "p",
         unit: "mm",
+        format: "a4",
         encryption: {
           userPassword: app.dni,
           ownerPassword: "797233232#2ewwe24",

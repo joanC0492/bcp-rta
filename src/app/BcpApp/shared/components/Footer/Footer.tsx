@@ -4,7 +4,7 @@ import { getUrlProd } from "@/shared/helpers";
 interface IProps {
   classes?: string;
 }
-export const Footer: React.FC<IProps> = ({ classes = "text-center" }) => {
+export const Footer: React.FC<IProps> = ({ classes = "text-end py-5" }) => {
   return (
     <footer className={`mail__footer ${classes}`}>
       <img
