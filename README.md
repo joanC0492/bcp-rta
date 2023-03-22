@@ -17,4 +17,4 @@ npm install
 
 
 ## Preview
-# ![jsPDF](./public/project.png)
+# ![jsPDF](./public/project.jpg)
