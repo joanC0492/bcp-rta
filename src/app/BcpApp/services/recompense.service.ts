@@ -25,6 +25,7 @@ const postRecompense = async (
       });
       const dataJson = await res.json();
       data = dataJson.d;
+
     } else {
       res = await fetch(URL);
       const dataJson: IQuerySql[] = await res.json();

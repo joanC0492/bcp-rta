@@ -1,4 +1,4 @@
-import { useUserContext } from "../../store/UserContext";
+import { useUserContext } from "@/store/UserContext";
 
 export const getNameBaseByCode = (code: string): string => {
   const { users } = useUserContext();

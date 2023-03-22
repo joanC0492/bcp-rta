@@ -1,12 +1,12 @@
 import { Route, Routes } from "react-router-dom";
 import { RecompenseProvider } from "@/app/BcpApp/store/context";
-import { UserProvider } from "@/app/BcpApp/store/UserContext";
 import { routes } from "./routes";
+import { MultimediaProvider } from "../store/MultimediaContext";
 
 export const BcpAppRouter = () => {
   return (
-    <UserProvider>
-      <RecompenseProvider>
+    <RecompenseProvider>
+      <MultimediaProvider>
         <Routes>
           {routes.map((route) => (
             <Route
@@ -16,7 +16,7 @@ export const BcpAppRouter = () => {
             />
           ))}
         </Routes>
-      </RecompenseProvider>
-    </UserProvider>
+      </MultimediaProvider>
+    </RecompenseProvider>
   );
 };

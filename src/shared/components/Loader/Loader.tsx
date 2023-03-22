@@ -4,15 +4,15 @@ import "./Loader.scss";
 
 interface IProps {
   children?: React.ReactNode;
+  text?: string;
 }
-export const Loader: React.FC<IProps> = ({ children }) => {
+export const Loader: React.FC<IProps> = ({ children, text }) => {
   return ReactDOM.createPortal(
     <div className="loader-portal">
       {children ? (
         children
       ) : (
         <div className="loader-container">
-          
           <div className="loader-wrapper">
             <figure className="loader-hydrated">
               <img
@@ -26,9 +26,8 @@ export const Loader: React.FC<IProps> = ({ children }) => {
             <div className="loader-rotation"></div>
           </div>
           <div className="loader-message mt-2">
-            <p className="loader-txt flexo-regular">Generando PDF</p>
+            {text && <p className="loader-txt flexo-regular">{text}</p>}
           </div>
-
         </div>
       )}
     </div>,

@@ -1,28 +1,31 @@
-import { pdfData } from "@/app/BcpApp/data/pdfData";
-import { srcImages } from "@/shared/helpers";
+import { data } from "@/app/BcpApp/data/bcpRecompensaData";
+import { getUrlProd } from "@/shared/helpers";
 
 interface IProps {
-  classes?: string;
-  classesImg?: string;
+  className?: string;
+  classNameImg?: string;
 }
-// text-center
-export const Header: React.FC<IProps> = ({ classes = "", classesImg }) => {
+
+export const Header: React.FC<IProps> = ({
+  className = "",
+  classNameImg = "",
+}) => {
   return (
-    <header className={`mail__header mail__header--img ${classes}`}>
+    <header className={`mail__header mail__header--img ${className}`}>
       <img
-        src={srcImages + "/logo-header.png"}
+        src={getUrlProd + "/images/mail/logo-header.png"}
         alt="Logo Header"
-        className={`mail__header-img ${classesImg}`}
+        className={`mail__header-img ${classNameImg}`}
       />
       <div className="mail__cloud-whithe">
         <img
-          src={srcImages + "/bg-white.png"}
+          src={getUrlProd + "/images/mail/bg-white.png"}
           alt="Cloud White"
           className="mail__cloud-img"
         />
         <div className="position-absolute top-0 start-0">
           <p className="mail__cloud-txt flexo-boldit">
-            {pdfData.textHeaderGlobo}
+            {data.pdfData.textHeaderGlobo}
           </p>
         </div>
       </div>

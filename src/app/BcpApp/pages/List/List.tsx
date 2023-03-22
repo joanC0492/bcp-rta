@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { useUserContext } from "../../store/UserContext";
+import { useUserContext } from "@/store/UserContext";
+import { bcpListData } from "@/app/BcpApp/data/bcpListData";
 
 export const List = () => {
   const { users } = useUserContext();
@@ -8,16 +9,16 @@ export const List = () => {
       <div className="container">
         <div className="row">
           <div className="col-12 col-lg-11 col-xl-10 mx-auto">
-            <h1>Lista de Usuarios</h1>
+            <h1>{bcpListData.title}</h1>
             <hr />
             <table className="table table-hover">
               <thead>
                 <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">Código</th>
-                  <th scope="col">Nombre</th>
-                  <th scope="col">Nombre de saludo</th>
-                  <th scope="col">Enlace</th>
+                  {bcpListData.tableColumns.map((col, i) => (
+                    <th scope="col" key={i}>
+                      {col}
+                    </th>
+                  ))}
                 </tr>
               </thead>
               <tbody>
@@ -28,7 +29,9 @@ export const List = () => {
                     <td>{user.name}</td>
                     <td>{user.nameBase}</td>
                     <td>
-                      <Link to={"/?code=" + user.uid}>Link</Link>
+                      <Link to={"/?code=" + user.uid}>
+                        {bcpListData.txtLink}
+                      </Link>
                     </td>
                   </tr>
                 ))}

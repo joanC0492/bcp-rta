@@ -1,14 +1,14 @@
-import { pdfData } from "@/app/BcpApp/data/pdfData";
+import { data } from "@/app/BcpApp/data/bcpRecompensaData";
 import { getUrlProd } from "@/shared/helpers";
 
 interface IProps {
-  classes?: string;
+  className?: string;
 }
-export const Footer: React.FC<IProps> = ({ classes = "text-end py-5" }) => {
+export const Footer: React.FC<IProps> = ({ className = "" }) => {
   return (
-    <footer className={`mail__footer ${classes}`}>
+    <footer className={`mail__footer ${className}`}>
       <img
-        src={getUrlProd + pdfData.imgFooter}
+        src={getUrlProd + data.pdfData.imgFooter}
         alt="Logo Footer"
         className="mail__footer-img"
       />

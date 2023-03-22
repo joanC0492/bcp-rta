@@ -1,20 +1,14 @@
 .Navigate {
-  position: fixed;
-  left: 15px;
-  top: 15px;
-  z-index: 9;
-  @media (max-width: 1919px) {
-    position: absolute;
-    top: 7.5px;
-  }
+  padding: 15px 0 0 15px;
   @media (max-width: 767px) {
-    position: static;
-    top: 15px;
     display: flex;
     padding: 15px 15px 0px 15px;
     & > a,
     button {
       line-height: 1;
+    }
+    & > button:nth-last-of-type(1) {
+      display: none !important;
     }
   }
 }

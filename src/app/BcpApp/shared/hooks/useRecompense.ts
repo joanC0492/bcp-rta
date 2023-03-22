@@ -1,10 +1,9 @@
 import { useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
-import { IApp } from "../../domain";
-import { Recompense } from "../../services";
-import { useRecompenseContext } from "../../store/context";
-import { getDNIByCode } from "../helpers/getDNIByCode";
-import { getNameBaseByCode } from "../helpers/getNameBaseByCode";
+import { IApp } from "@/app/BcpApp/domain";
+import { Recompense } from "@/app/BcpApp/services";
+import { useRecompenseContext } from "@/app/BcpApp/store/context";
+import { getDNIByCode, getNameBaseByCode } from "@/app/BcpApp/shared/helpers";
 
 export const useRecompense = () => {
   const { setApp } = useRecompenseContext();
@@ -27,12 +26,12 @@ export const useRecompense = () => {
       }
     };
 
-    if (DNI) {
+    if (DNI && nameBase) {
       setRecompense();
     }
 
     return () => {
       isCancelled = true;
     };
-  }, [DNI]);
+  }, [DNI, nameBase]);
 };

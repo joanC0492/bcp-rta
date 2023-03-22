@@ -1,20 +1,9 @@
 import { Link } from "react-router-dom";
 import cssNav from "@/assets/css/BcpApp/components/Navigate.module.scss";
+import { useMultimediaContext } from "@/app/BcpApp/store/MultimediaContext";
 
-interface IProps {
-  exportPdf: () => void;
-  exportImg: () => void;
-  elementsRef: {
-    mailRef: React.RefObject<HTMLDivElement>;
-    imageRef: React.RefObject<HTMLDivElement>;
-    refNavigate: React.RefObject<HTMLDivElement>;
-  };
-}
-export const Navigate: React.FC<IProps> = ({
-  exportPdf,
-  exportImg,
-  elementsRef,
-}) => {
+export const Navigate: React.FC = () => {
+  const { exportPdf, exportImg, elementsRef } = useMultimediaContext();
   return (
     <>
       <div ref={elementsRef.refNavigate} className={cssNav["Navigate"]}>

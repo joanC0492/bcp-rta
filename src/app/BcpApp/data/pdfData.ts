@@ -1,4 +1,4 @@
-export const pdfData = {
+export const _pdfData = {
   textHeaderGlobo: "Recompensa a la medida",
 
   text1:

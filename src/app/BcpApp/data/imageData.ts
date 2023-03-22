@@ -1,16 +1,13 @@
-export const imageData = {
+export const _imageData = {
   text1:
     "Este 2022 hemos superado muchos retos juntos, logrando cumplir nuestros objetivos.",
   text2:
     "En el BCP seguimos enfocados en transformar tus planes en realidad, los de nuestros clientes y el país. Gracias a tu trabajo y tu compromiso, eso es posible.",
-  // text3:
-  //   "Hoy queremos celebrar y compartir contigo el detalle de tu Recompensa Total que disfrutaste en el 2022 por ser colaborador BCP.",
 
   textAlert1: "Hoy queremos celebrar y compartir contigo",
   textAlert2: "el detalle de la Recompensa Total, que recibiste",
   textAlert3: "por ser colaborador del BCP, duranteel 2022.",
 
-  // imgTitle2022: "/images/title-2022-image.svg",
   imgTitle2022: "/images/title-2022-image.png",
 
   textInfo1: "Para más información,",
