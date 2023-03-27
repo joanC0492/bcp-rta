@@ -4,6 +4,7 @@ import { IUser } from "@/app/BcpApp/domain";
 
 export const useUsers = () => {
   const [users, setUsers] = useState([] as IUser[]);
+  const [completed, setCompleted] = useState<boolean>(false);
 
   useEffect(() => {
     let isCancelled = false;
@@ -13,6 +14,8 @@ export const useUsers = () => {
         if (!isCancelled) setUsers(data);
       } catch (error) {
         console.log(error);
+      } finally {
+        setCompleted(true);
       }
     };
     getUser();
@@ -23,5 +26,6 @@ export const useUsers = () => {
 
   return {
     users,
+    completed,
   };
 };

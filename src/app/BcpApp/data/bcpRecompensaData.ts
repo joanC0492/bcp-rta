@@ -1,4 +1,9 @@
 export const data = {
+  navigate: {
+    btnList: "Lista de usuarios",
+    btnPdf: "Generar PDF",
+    btnImage: "Generar Imagen",
+  },
   pdfData: {
     textHeaderGlobo: "Recompensa a la medida",
 

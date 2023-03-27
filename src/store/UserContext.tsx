@@ -4,6 +4,7 @@ import { useUsers } from "@/shared/hooks";
 
 interface IUserContext {
   users: IUser[];
+  isLoading: boolean;
   handleUsers: (users: IUser[]) => void;
 }
 
@@ -13,7 +14,7 @@ interface IProps {
   children: React.ReactNode;
 }
 const UserProvider: React.FC<IProps> = ({ children }) => {
-  const { users } = useUsers();
+  const { users, completed } = useUsers();
   const [tmpUsers, tmpSetUsers] = useState(users);
 
   const handleUsers = (users: IUser[]) => {
@@ -21,11 +22,14 @@ const UserProvider: React.FC<IProps> = ({ children }) => {
   };
 
   useEffect(() => {
-    tmpSetUsers(users);
+    if (completed === true) {
+      tmpSetUsers(users);
+    }
   }, [users]);
 
   return (
-    <UserContext.Provider value={{ users: tmpUsers, handleUsers }}>
+    <UserContext.Provider
+      value={{ users: tmpUsers, handleUsers, isLoading: !completed }}>
       {children}
     </UserContext.Provider>
   );

@@ -1,4 +1,4 @@
-import { createContext, useContext } from "react";
+import { createContext, useContext, useEffect } from "react";
 import {
   IElementsRef,
   ILoading,
@@ -23,7 +23,7 @@ interface IProps {
 const MultimediaProvider = ({ children }: IProps) => {
   const { exportPdf, exportImg, elementsRef, loading, showViewImage } =
     useExportMultimedia();
-
+    
   return (
     <MultimediaContext.Provider
       value={{ exportPdf, exportImg, elementsRef, loading, showViewImage }}>

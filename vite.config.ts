@@ -9,19 +9,4 @@ export default defineConfig({
     },
   },
   plugins: [react()],
-  build: {
-    outDir: "../front-production",
-    sourcemap: true,
-    cssCodeSplit: true,
-    watch: {
-      skipWrite: false,
-    },
-    rollupOptions: {
-      output: {
-        entryFileNames: "assets/[name].js",
-        chunkFileNames: "assets/[name].js",
-        assetFileNames: "assets/[name].[ext]",
-      },
-    },
-  },
 });

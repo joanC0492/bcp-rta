@@ -1,2 +1,2 @@
-export const getUrlProd: string = "./front-production";
-export const srcImages: string = "./front-production/images/mail";
+const URL: string = import.meta.env.VITE_GET_URL;
+export const getUrlProd: string = URL;

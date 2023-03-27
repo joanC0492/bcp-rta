@@ -11,7 +11,7 @@ const INIT_LOADING: ILoading = {
 };
 
 export const useExportMultimedia = () => {
-  const { app } = useRecompenseContext();
+  const { app } = useRecompenseContext();  
   const [loading, setLoading] = useState<ILoading>(INIT_LOADING);
   const [showViewImage, setShowViewImage] = useState<boolean>(false);
 
@@ -64,13 +64,16 @@ export const useExportMultimedia = () => {
         orientation: "p",
         unit: "mm",
         format: [imgHeight, imgWidth],
-        encryption: {
-          userPassword: app.dni,
-          ownerPassword: "797233232#2ewwe24",
-          userPermissions: ["print", "copy"],
-        },
+        // encryption: {
+        //   userPassword: app.dni,
+        //   ownerPassword: "797233232#2ewwe24",
+        //   userPermissions: ["print", "copy"],
+        // },
       });
+
+      
       doc.addImage(canvas, "PNG", 0, position, imgWidth, imgHeight, "", "FAST");
+      doc.link(0, 0, imgWidth, imgHeight, { url: "https://www.youtube.com/" });
       doc.save(NAME_PDF_IMG + app.uid + ".pdf");
 
       // Devolvemos las clases y los estilos seran los de un inicio

@@ -8,7 +8,6 @@ interface IProps {
 }
 export const MailLayout: React.FC<IProps> = ({ children }) => {
   const { loading } = useMultimediaContext();
-
   return (
     <>
       <Navigate />

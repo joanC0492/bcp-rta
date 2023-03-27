@@ -2,7 +2,7 @@
 .mail {
   width: 100%;
   min-height: 750px;
-  background-image: url("../images/background-to-pdf.png");
+  background-image: url("/images/background-to-pdf.png");
   background-size: cover;
   background-position: left top;
   padding: 15px 50px 15px 50px;
@@ -21,7 +21,7 @@
     display: none;
     content: "";
     position: absolute;
-    background-image: url("../images/mail/employed.png");
+    background-image: url("/images/mail/employed.png");
     background-position: left bottom;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -35,7 +35,7 @@
     display: none;
     content: "";
     position: absolute;
-    background-image: url("../images/experiencia-woow.png");
+    background-image: url("/images/experiencia-woow.png");
     background-position: left bottom;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -48,7 +48,7 @@
   &--image {
     min-height: 881px;
     max-width: 668px;
-    background-image: url("../images/mail/background-mail.jpg");
+    background-image: url("/images/mail/background-mail.jpg");
     &::before {
       display: none;
     }
@@ -220,7 +220,7 @@
     display: none !important;
     content: "";
     position: absolute;
-    background-image: url("../images/chanchito.png");
+    background-image: url("/images/chanchito.png");
     background-repeat: no-repeat;
     background-size: 100%;
     z-index: 200;

@@ -34,10 +34,8 @@ export const TableBcp: React.FC<IProps> = ({
                   {macroCategoria}
                 </td>
               </tr>
-
               <tr className="table-bcp__row">
                 <td className="table-bcp__col">
-                  {/* style={{ paddingTop: "25px" }} */}
                   <div className="d-flex justify-content-between">
                     <span></span>
                     <span

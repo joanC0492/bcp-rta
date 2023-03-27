@@ -1,4 +1,4 @@
-import { createContext, useContext, useReducer } from "react";
+import { createContext, useContext, useEffect, useReducer } from "react";
 import { IAction, IApp, IRecompenseContext } from "@/app/BcpApp/domain";
 import { reducer } from "./reducer";
 
@@ -28,7 +28,7 @@ const RecompenseProvider: React.FC<IProps> = ({ children }) => {
     };
     dispatch(action);
   };
-
+  
   return (
     <RecompenseContext.Provider
       value={{
