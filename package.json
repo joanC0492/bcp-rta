@@ -6,9 +6,9 @@
   "homepage": "http://joanc0492.github.io/bcp-rta",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc && vite build --base=./",
     "preview": "vite preview"
   },
   "dependencies": {
