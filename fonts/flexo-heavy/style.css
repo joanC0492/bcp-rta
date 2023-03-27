@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Flexo';
+    src: local('Flexo Heavy'), local('Flexo-Heavy'),
+        url('Flexo-Heavy.woff2') format('woff2'),
+        url('Flexo-Heavy.woff') format('woff'),
+        url('Flexo-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+  }
